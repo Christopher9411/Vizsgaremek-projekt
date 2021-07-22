@@ -21,6 +21,11 @@ import java.util.function.BooleanSupplier;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 
 
+//logindata goes here
+
+
+
+
 
 public class Fórumteszt {
     String baseUrl = "https://forum.index.hu/Topic/showTopicList";
@@ -94,10 +99,9 @@ public class Fórumteszt {
         email.sendKeys(email_adress);
         WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
         password.sendKeys(password_field);
-        WebElement login_button = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_submit\"]"));
+        WebElement login_button = driver.findElement(By.xpath("//*[@id=\"indpl_login_box_180\"]/form/div[3]/div[2]/div[2]/input"));
         login_button.click();
         WebElement logout = driver.findElement(By.cssSelector(".ahigh"));
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Assertions.assertEquals(true, logout.isDisplayed()); //ellenőrzés hogy a kilépési gomb meg van-e jelenítve
         driver.close();
 
@@ -109,15 +113,14 @@ public class Fórumteszt {
     public void Logout() {
         driver.get(baseUrl);
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        WebElement email = driver.findElement(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[1]/div/div[1]/form/div[3]/div[2]/div[1]/input[1]"));
-        email.click();
+        WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
         email.sendKeys(email_adress);
-        WebElement password_field = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
-        password_field.sendKeys();
-        WebElement login_button = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
+        WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
+        password.sendKeys(password_field);
+        WebElement login_button = driver.findElement(By.xpath("//*[@id=\"indpl_login_box_180\"]/form/div[3]/div[2]/div[2]/input"));
         login_button.click();
-        WebElement exit_button = driver.findElement(By.cssSelector("#leftcol > div.darkbox > ul > li:nth-child(7) > a"));
-        exit_button.click();
+        WebElement logout = driver.findElement(By.cssSelector(".ahigh"));;
+        logout.click();
         Assert.assertEquals("https://kilepes.blog.hu/", "https://kilepes.blog.hu/");
 
 
@@ -128,25 +131,23 @@ public class Fórumteszt {
     public void List_data() {
         driver.get(baseUrl);
         WebDriverWait waiting = new WebDriverWait(driver, 30);
+        WebElement text = driver.findElement(By.xpath("/html/body/div[3]/div[1]/p[1]"));
         Assert.assertEquals("https://forum.index.hu/Topic/showTopicList?t=24", driver.getCurrentUrl());
-
-
     }
 
 
     @Test
     public void Inputdata() {
         driver.get(baseUrl);
-        WebElement email = driver.findElement(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[1]/div/div[1]/form/div[3]/div[2]/div[1]/input[1]"));
-        email.click();
+        WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
         email.sendKeys(email_adress);
-        WebElement password_field = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
-       password_field.sendKeys();
-        WebElement login_button = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
+        WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
+        password.sendKeys(password_field);
+        WebElement login_button = driver.findElement(By.xpath("//*[@id=\"indpl_login_box_180\"]/form/div[3]/div[2]/div[2]/input"));
         login_button.click();
         WebElement settings = driver.findElement(By.cssSelector(".boxbold > li:nth-child(3)"));
         settings.click();
-        WebElement about_me = driver.findElement(By.cssSelector("#usersettings > tbody > tr:nth-child(7) > td.us_input_big > textarea"));
+        WebElement about_me = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/form/table/tbody/tr[7]/td[2]/textarea"));
         about_me.clear();
         about_me.click();
         about_me.sendKeys("Ez egy tesztfiók amely Chromedriveres automata tesztelésre lett létrehozva.");
@@ -161,12 +162,11 @@ public class Fórumteszt {
     @Test
     public void modify_data() {   //Belépünk az index fórumba majd pedig a profilbeállításoknál megváltoztatjuk a jelszavunkat
         driver.get(baseUrl);
-        driver.findElement(By.cssSelector("#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button.css-k8o10q")).click();
-        WebElement email = driver.findElement(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[1]/div/div[1]/form/div[3]/div[2]/div[1]/input[1]"));
+        WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
         email.sendKeys(email_adress);
         email.click();
-        WebElement password_field = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
-        password_field.sendKeys();
+        WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
+        password.sendKeys();
         WebElement login_button = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
         login_button.click();
         WebDriverWait waiting = new WebDriverWait(driver, 40);
@@ -183,15 +183,15 @@ public class Fórumteszt {
     }
 
 
-    @Test
+
     public void Getdata() {
         driver.get(baseUrl);
         WebElement homepage = driver.findElement(By.cssSelector(".foot-forum > p:nth-child(2)"));
         System.out.println(homepage.getText());
-       // Assert.assertEquals("Magyarország első és legnagyobb fórum szolgáltatása. A web kettő pre-bétája, amit 1997 óta töltenek meg tartalommal a fórumlakók. Fórumok változatos témákban, hangnemben, moderálva. Ha nem csak megosztani akarsz, hanem diskurálni egy egy témában, csatlakozz Te is, és ha kitartó vagy, társakra találhatsz.", index_összefoglaló.getText());
-        driver.close();
-
     }
+
+
+
 
 
     @Test
@@ -201,46 +201,73 @@ public class Fórumteszt {
         search_field.sendKeys("kutya");
         WebElement search_button = driver.findElement(By.cssSelector("#kereso > div > form > input.btnok"));
         search_button.click();
-        WebDriverWait waiting = new WebDriverWait(driver, 40);
-        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[2]/form[1]/table/tbody/tr/td[1]/a[1]"))).click();
+        WebElement page2= driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[1]"));
+       page2.click();
+        WebElement page3 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[4]"));
+        page3.click();
+        WebElement page4 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[5]"));
+        page4.click();
+        WebElement page5 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[6]"));
+        page5.click();
+        WebElement page6 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[7]"));
+        page6.click();
+        WebElement page7 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[8]"));
+        page7.click();
+        WebElement page8 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[9]"));
+        page8.click();
+        WebElement page9 = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/form[1]/table/tbody/tr/td[1]/a[10]"));
+        page9.click();
+         page8 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[9]"));
+        page8.click();
+        page7 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[8]"));
+        page7.click();
+        page6 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[7]"));
+        page6.click();
+        page5 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[6]"));
+        page5.click();
+        page4 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[5]"));
+        page4.click();
+        page3 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[4]"));
+        page3.click();
+        page2
+
+
+
 
 
 
 
         //String search_results = "https://forum.index.hu/Search/showTopicResult?tr_start=30&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=";
         //Assert.assertEquals(search_results, "https://forum.index.hu/Search/showTopicResult?tr_start=30&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=");
-       driver.close();
 
-
-
-
-    }
+        }
 
 
     @Test
     public void Remove_Data() {
         driver.get(baseUrl);
-        driver.findElement(By.cssSelector("#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button.css-k8o10q")).click();
-        WebElement email = driver.findElement(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[1]/div/div[1]/form/div[3]/div[2]/div[1]/input[1]"));
+        WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
         email.sendKeys(email_adress);
-        WebElement jelszómező = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
-        jelszómező.sendKeys(password_field);
-        WebElement belépésgomb = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
-        belépésgomb.click();
+        WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
+        password.sendKeys(password_field);
+        WebElement login_button = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
+        login_button.click();
         WebDriverWait waiting = new WebDriverWait(driver, 40);
-        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[1]/div/div[1]/ul/li[4]/a"))).click();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        WebElement remove_history = driver.findElement(By.cssSelector("#naviheader > button:nth-child(1)"));
-        remove_history.click();
+        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".boxbold > li:nth-child(4) > a:nth-child(2)"))).click();
+        WebElement history_erase = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/div[1]/button"));
+        history_erase.click();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Alert alert = driver.switchTo().alert();
         alert.accept();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        WebElement topic_előzmények = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td[1]"));
-        Assert.assertFalse((BooleanSupplier) topic_előzmények); //Hogyan lehetne itt ellenőrizni azt hogy a topic_előzmények teljesen üres?
+        WebElement topic_history = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td[1]"));
+        Assert.assertFalse((BooleanSupplier) topic_history); //Hogyan lehetne itt ellenőrizni azt hogy a topic_előzmények teljesen üres?
         driver.close();
     }
-}
+
+
+        }
+
 
 
 
