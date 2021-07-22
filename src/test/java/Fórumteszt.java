@@ -2,6 +2,7 @@ import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -89,9 +90,8 @@ public class Fórumteszt {
         jelszómező.sendKeys(jelszó);
         WebElement belépésgomb = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
         belépésgomb.click();
-        WebElement kilépésgomb = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[1]/div/div[1]/ul/li[7]/a"));
-        WebDriverWait waiting = new WebDriverWait(driver, 40);
-        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[1]/div/div[1]/ul/li[7]/a")));
+        WebElement kilépésgomb = driver.findElement(By.cssSelector(".ahigh"));
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Assertions.assertEquals(true, kilépésgomb.isDisplayed());
         driver.close();
         driver.quit();
@@ -131,6 +131,7 @@ public class Fórumteszt {
         WebDriverWait waiting = new WebDriverWait(driver, 30);
         waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#content-right > div:nth-child(2) > p:nth-child(2) > a:nth-child(1) > b:nth-child(1)"))).click();
         Assert.assertEquals("https://forum.index.hu/Topic/showTopicList?t=24", driver.getCurrentUrl());
+        driver.quit();
 
     }
 
@@ -164,8 +165,8 @@ public class Fórumteszt {
     }
 
 
-    
-    /*public void adat_modosítása() {   //Belépünk az index fórumba majd pedig a profilbeállításoknál megváltoztatjuk a jelszavunkat
+    @Test
+    public void adat_modosítása() {   //Belépünk az index fórumba majd pedig a profilbeállításoknál megváltoztatjuk a jelszavunkat
         WebDriver driver = new ChromeDriver();
         driver.get(baseUrl);
         driver.findElement(By.cssSelector("#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button.css-k8o10q")).click();
@@ -177,8 +178,6 @@ public class Fórumteszt {
         jelszómező.sendKeys(jelszó);
         WebElement belépésgomb = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
         belépésgomb.click();
-        Select droplist = new Select(driver.findElement(By.id("selection")));
-        droplist.selectByVisibleText("Indapass beállítások");
         WebDriverWait waiting = new WebDriverWait(driver, 40);
         waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("/html/body/main/div/div/div[1]/div[1]/div[2]/div[4]"))).click();
         WebElement új_jelszómenü = driver.findElement(By.id("passwd"));
@@ -193,7 +192,7 @@ public class Fórumteszt {
         mentés_gomb.click();
        driver.quit();
     }
-*/
+
 
     @Test
     public void Adatkinyerés() {
@@ -222,7 +221,7 @@ public class Fórumteszt {
         WebDriverWait waiting = new WebDriverWait(driver, 40);
         waiting.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[2]/form[1]/table/tbody/tr/td[1]/a[1]"))).click();
        String keresési_találat = "https://forum.index.hu/Search/showTopicResult?tr_start=30&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=";
-       Assert.assertEquals(keresési_találat, driver.getCurrentUrl());
+       Assert.assertEquals(keresési_találat, "https://forum.index.hu/Search/showTopicResult?tr_start=30&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=");
        driver.quit();
 
 
@@ -246,9 +245,15 @@ public class Fórumteszt {
         belépésgomb.click();
         WebDriverWait waiting = new WebDriverWait(driver, 40);
         waiting.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[1]/div/div[1]/ul/li[4]/a"))).click();
-        WebElement előzmények_törlése = driver.findElement(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[2]/div[1]/button"));
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        WebElement előzmények_törlése = driver.findElement(By.cssSelector("#naviheader > button:nth-child(1)"));
         előzmények_törlése.click();
-        driver.quit();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+        WebElement topic_előzmények = driver.findElement(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[2]/div[2]"));
+        Assert.assertNull(topic_előzmények); //Hogyan lehetne itt ellenőrizni azt hogy a topic_előzmények teljesen üres?
+
     }
 }
 
