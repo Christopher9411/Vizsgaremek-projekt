@@ -24,8 +24,8 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClick
 
 public class Fórumteszt {
     String baseUrl = "https://forum.index.hu/Topic/showTopicList";
-    String emailcím = "nagy.kristof1994@gmail.com";
-    String jelszó = "teszt123";
+    String email_adress = "nagy.kristof1994@gmail.com";
+    String password_field = "teszt123";
     String jelszóismét = "teszt123";
     String Nickname = "Teszter Jakab";
     String Bemutatkozás = "Ez egy tesztfiók amely Chromedriveres automata tesztelésre lett létrehozva.";
@@ -91,10 +91,10 @@ public class Fórumteszt {
     public void Login() {
         driver.get(baseUrl);
         WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
-        email.sendKeys(emailcím);
-        WebElement password_field = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
-        password_field.sendKeys(jelszó);
-        WebElement login_button = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
+        email.sendKeys(email_adress);
+        WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
+        password.sendKeys(password_field);
+        WebElement login_button = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_submit\"]"));
         login_button.click();
         WebElement logout = driver.findElement(By.cssSelector(".ahigh"));
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -106,20 +106,18 @@ public class Fórumteszt {
 
 
     @Test
-    public void kijelentkezés() {
+    public void Logout() {
         driver.get(baseUrl);
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        driver.findElement(By.cssSelector("#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button.css-k8o10q")).click();
         WebElement email = driver.findElement(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[1]/div/div[1]/form/div[3]/div[2]/div[1]/input[1]"));
         email.click();
-        email.sendKeys(emailcím);
-        WebElement jelszómező = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
-        jelszómező.click();
-        jelszómező.sendKeys(jelszó);
-        WebElement belépésgomb = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
-        belépésgomb.click();
-        WebElement kilépésgomb = driver.findElement(By.cssSelector("#leftcol > div.darkbox > ul > li:nth-child(7) > a"));
-        kilépésgomb.click();
+        email.sendKeys(email_adress);
+        WebElement password_field = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
+        password_field.sendKeys();
+        WebElement login_button = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
+        login_button.click();
+        WebElement exit_button = driver.findElement(By.cssSelector("#leftcol > div.darkbox > ul > li:nth-child(7) > a"));
+        exit_button.click();
         Assert.assertEquals("https://kilepes.blog.hu/", "https://kilepes.blog.hu/");
 
 
@@ -127,12 +125,9 @@ public class Fórumteszt {
 
 
     @Test
-    public void Adatoklistázása() {
+    public void List_data() {
         driver.get(baseUrl);
-        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        driver.findElement(By.cssSelector("#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button.css-k8o10q")).click();
         WebDriverWait waiting = new WebDriverWait(driver, 30);
-        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#content-right > div:nth-child(2) > p:nth-child(2) > a:nth-child(1) > b:nth-child(1)"))).click();
         Assert.assertEquals("https://forum.index.hu/Topic/showTopicList?t=24", driver.getCurrentUrl());
 
 
@@ -140,86 +135,80 @@ public class Fórumteszt {
 
 
     @Test
-    public void adatbevitel() {
+    public void Inputdata() {
         driver.get(baseUrl);
-        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        driver.findElement(By.cssSelector("#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button.css-k8o10q")).click();
         WebElement email = driver.findElement(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[1]/div/div[1]/form/div[3]/div[2]/div[1]/input[1]"));
         email.click();
-        email.sendKeys(emailcím);
-        WebElement jelszómező = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
-        jelszómező.click();
-        jelszómező.sendKeys(jelszó);
-        WebElement belépésgomb = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
-        belépésgomb.click();
-        WebElement beállítások = driver.findElement(By.cssSelector(".boxbold > li:nth-child(3)"));
-        beállítások.click();
-        WebElement Magamról_mező = driver.findElement(By.cssSelector("#usersettings > tbody > tr:nth-child(7) > td.us_input_big > textarea"));
-        Magamról_mező.clear();
-        Magamról_mező.click();
-        Magamról_mező.sendKeys("Ez egy tesztfiók amely Chromedriveres automata tesztelésre lett létrehozva.");
-        WebElement felhasználási_feltételek = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
-        felhasználási_feltételek.click();
+        email.sendKeys(email_adress);
+        WebElement password_field = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
+       password_field.sendKeys();
+        WebElement login_button = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
+        login_button.click();
+        WebElement settings = driver.findElement(By.cssSelector(".boxbold > li:nth-child(3)"));
+        settings.click();
+        WebElement about_me = driver.findElement(By.cssSelector("#usersettings > tbody > tr:nth-child(7) > td.us_input_big > textarea"));
+        about_me.clear();
+        about_me.click();
+        about_me.sendKeys("Ez egy tesztfiók amely Chromedriveres automata tesztelésre lett létrehozva.");
+        WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
+        terms_of_service.click();
         WebDriverWait waiting = new WebDriverWait(driver, 40);
         waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
-        Assert.assertNotNull(Magamról_mező);
+        Assert.assertNotNull(about_me);
     }
 
 
     @Test
-    public void adat_modosítása() {   //Belépünk az index fórumba majd pedig a profilbeállításoknál megváltoztatjuk a jelszavunkat
+    public void modify_data() {   //Belépünk az index fórumba majd pedig a profilbeállításoknál megváltoztatjuk a jelszavunkat
         driver.get(baseUrl);
         driver.findElement(By.cssSelector("#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button.css-k8o10q")).click();
         WebElement email = driver.findElement(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[1]/div/div[1]/form/div[3]/div[2]/div[1]/input[1]"));
-        email.sendKeys(emailcím);
+        email.sendKeys(email_adress);
         email.click();
-        WebElement jelszómező = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
-        jelszómező.click();
-        jelszómező.sendKeys(jelszó);
-        WebElement belépésgomb = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
-        belépésgomb.click();
+        WebElement password_field = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
+        password_field.sendKeys();
+        WebElement login_button = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
+        login_button.click();
         WebDriverWait waiting = new WebDriverWait(driver, 40);
         waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("/html/body/main/div/div/div[1]/div[1]/div[2]/div[4]"))).click();
-        WebElement új_jelszómenü = driver.findElement(By.id("passwd"));
-        új_jelszómenü.click();
-        új_jelszómenü.sendKeys("teszt123");
-        WebElement jelszó_ismétlése = driver.findElement(By.id("passwd2"));
-        jelszó_ismétlése.click();
-        jelszó_ismétlése.sendKeys("teszt123");
-        WebElement jelenlegi_jelszó = driver.findElement(By.cssSelector("input.input:nth-child(6)"));
-        jelenlegi_jelszó.click();
-        WebElement mentés_gomb = driver.findElement(By.xpath("/html/body/main/div/div/div[1]/div[1]/div[2]/section[4]/div/form/button"));
-        mentés_gomb.click();
+        WebElement new_password = driver.findElement(By.id("passwd"));
+       new_password.sendKeys("teszt123");
+        WebElement repeat_password = driver.findElement(By.id("passwd2"));
+        repeat_password.sendKeys("teszt123");
+        WebElement current_password = driver.findElement(By.cssSelector("input.input:nth-child(6)"));
+        current_password.click();
+        WebElement save_button = driver.findElement(By.xpath("/html/body/main/div/div/div[1]/div[1]/div[2]/section[4]/div/form/button"));
+        save_button.click();
         driver.close();
     }
 
 
     @Test
-    public void Adatkinyerés() {
+    public void Getdata() {
         driver.get(baseUrl);
-        driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        driver.findElement(By.cssSelector("#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button.css-k8o10q")).click();
-        WebElement index_összefoglaló = driver.findElement(By.cssSelector(".foot-forum > p:nth-child(2)"));
-        System.out.println(index_összefoglaló.getText());
-        Assert.assertEquals("Magyarország első és legnagyobb fórum szolgáltatása. A web kettő pre-bétája, amit 1997 óta töltenek meg tartalommal a fórumlakók. Fórumok változatos témákban, hangnemben, moderálva. Ha nem csak megosztani akarsz, hanem diskurálni egy egy témában, csatlakozz Te is, és ha kitartó vagy, társakra találhatsz.", index_összefoglaló.getText());
+        WebElement homepage = driver.findElement(By.cssSelector(".foot-forum > p:nth-child(2)"));
+        System.out.println(homepage.getText());
+       // Assert.assertEquals("Magyarország első és legnagyobb fórum szolgáltatása. A web kettő pre-bétája, amit 1997 óta töltenek meg tartalommal a fórumlakók. Fórumok változatos témákban, hangnemben, moderálva. Ha nem csak megosztani akarsz, hanem diskurálni egy egy témában, csatlakozz Te is, és ha kitartó vagy, társakra találhatsz.", index_összefoglaló.getText());
         driver.close();
 
     }
 
 
     @Test
-    public void Több_oldalas_lista_bejárása() {
+    public void Loop_through_list() {
         driver.get(baseUrl);
-        driver.findElement(By.cssSelector("#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button.css-k8o10q")).click();
-        WebElement keresőmező = driver.findElement(By.cssSelector(".inp"));
-       keresőmező.click();
-        keresőmező.sendKeys("kutya");
-        WebElement keresőgomb = driver.findElement(By.cssSelector("#kereso > div > form > input.btnok"));
-        keresőgomb.click();
+        WebElement search_field = driver.findElement(By.cssSelector(".inp"));
+        search_field.sendKeys("kutya");
+        WebElement search_button = driver.findElement(By.cssSelector("#kereso > div > form > input.btnok"));
+        search_button.click();
         WebDriverWait waiting = new WebDriverWait(driver, 40);
         waiting.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[2]/form[1]/table/tbody/tr/td[1]/a[1]"))).click();
-       String keresési_találat = "https://forum.index.hu/Search/showTopicResult?tr_start=30&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=";
-       Assert.assertEquals(keresési_találat, "https://forum.index.hu/Search/showTopicResult?tr_start=30&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=");
+
+
+
+
+        //String search_results = "https://forum.index.hu/Search/showTopicResult?tr_start=30&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=";
+        //Assert.assertEquals(search_results, "https://forum.index.hu/Search/showTopicResult?tr_start=30&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=");
        driver.close();
 
 
@@ -229,22 +218,20 @@ public class Fórumteszt {
 
 
     @Test
-    public void AdatokTörlése() {
+    public void Remove_Data() {
         driver.get(baseUrl);
         driver.findElement(By.cssSelector("#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button.css-k8o10q")).click();
         WebElement email = driver.findElement(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[1]/div/div[1]/form/div[3]/div[2]/div[1]/input[1]"));
-        email.click();
-        email.sendKeys(emailcím);
+        email.sendKeys(email_adress);
         WebElement jelszómező = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
-        jelszómező.click();
-        jelszómező.sendKeys(jelszó);
+        jelszómező.sendKeys(password_field);
         WebElement belépésgomb = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
         belépésgomb.click();
         WebDriverWait waiting = new WebDriverWait(driver, 40);
         waiting.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[3]/div/table/tbody/tr[2]/td[1]/div/div[1]/ul/li[4]/a"))).click();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        WebElement előzmények_törlése = driver.findElement(By.cssSelector("#naviheader > button:nth-child(1)"));
-        előzmények_törlése.click();
+        WebElement remove_history = driver.findElement(By.cssSelector("#naviheader > button:nth-child(1)"));
+        remove_history.click();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         Alert alert = driver.switchTo().alert();
         alert.accept();
