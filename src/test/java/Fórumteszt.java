@@ -1,4 +1,3 @@
-import org.jetbrains.annotations.NotNull;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,22 +8,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
 import java.util.Collections;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.function.BooleanSupplier;
 
-import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
-
 
 //logindata goes here
-
-
-
 
 
 public class Fórumteszt {
@@ -85,13 +76,6 @@ public class Fórumteszt {
  */
 
 
-
-
-
-
-
-
-
     @Test
     public void Login() {
         driver.get(baseUrl);
@@ -119,7 +103,8 @@ public class Fórumteszt {
         password.sendKeys(password_field);
         WebElement login_button = driver.findElement(By.xpath("//*[@id=\"indpl_login_box_180\"]/form/div[3]/div[2]/div[2]/input"));
         login_button.click();
-        WebElement logout = driver.findElement(By.cssSelector(".ahigh"));;
+        WebElement logout = driver.findElement(By.cssSelector(".ahigh"));
+        ;
         logout.click();
         Assert.assertEquals("https://kilepes.blog.hu/", "https://kilepes.blog.hu/");
 
@@ -164,34 +149,29 @@ public class Fórumteszt {
         driver.get(baseUrl);
         WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
         email.sendKeys(email_adress);
-        email.click();
         WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
-        password.sendKeys();
-        WebElement login_button = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
+        password.sendKeys(password_field);
+        WebElement login_button = driver.findElement(By.xpath("//*[@id=\"indpl_login_box_180\"]/form/div[3]/div[2]/div[2]/input"));
         login_button.click();
-        WebDriverWait waiting = new WebDriverWait(driver, 40);
-        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("/html/body/main/div/div/div[1]/div[1]/div[2]/div[4]"))).click();
-        WebElement new_password = driver.findElement(By.id("passwd"));
-       new_password.sendKeys("teszt123");
-        WebElement repeat_password = driver.findElement(By.id("passwd2"));
-        repeat_password.sendKeys("teszt123");
-        WebElement current_password = driver.findElement(By.cssSelector("input.input:nth-child(6)"));
-        current_password.click();
-        WebElement save_button = driver.findElement(By.xpath("/html/body/main/div/div/div[1]/div[1]/div[2]/section[4]/div/form/button"));
-        save_button.click();
+        WebElement settings = driver.findElement(By.cssSelector(".boxbold > li:nth-child(3)"));
+        settings.click();
+        WebElement website = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/form/table/tbody/tr[6]/td[2]/input"));
+        website.clear();
+        website.sendKeys("wwww.teszterjózsi.hu");
+        WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
+        terms_of_service.click();
+        WebDriverWait waiting = new WebDriverWait(driver, 10);
+        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
+        Assert.assertEquals("wwww.teszterjózsi.hu", website.getText());
         driver.close();
     }
 
-
-
+    @Test
     public void Getdata() {
         driver.get(baseUrl);
         WebElement homepage = driver.findElement(By.cssSelector(".foot-forum > p:nth-child(2)"));
         System.out.println(homepage.getText());
     }
-
-
-
 
 
     @Test
@@ -201,8 +181,8 @@ public class Fórumteszt {
         search_field.sendKeys("kutya");
         WebElement search_button = driver.findElement(By.cssSelector("#kereso > div > form > input.btnok"));
         search_button.click();
-        WebElement page2= driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[1]"));
-       page2.click();
+        WebElement page2 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[1]"));
+        page2.click();
         WebElement page3 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[4]"));
         page3.click();
         WebElement page4 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[5]"));
@@ -216,21 +196,9 @@ public class Fórumteszt {
         WebElement page8 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[9]"));
         page8.click();
         WebElement page9 = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/form[1]/table/tbody/tr/td[1]/a[10]"));
-        page9.click();
-         page8 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[9]"));
-        page8.click();
-        page7 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[8]"));
-        page7.click();
-        page6 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[7]"));
-        page6.click();
-        page5 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[6]"));
-        page5.click();
-        page4 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[5]"));
-        page4.click();
-        page3 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[4]"));
-        page3.click();
-        page2
-
+       String Website_link = driver.getCurrentUrl();
+        Assert.assertEquals("https://forum.index.hu/Search/showTopicResult?tr_start=240&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=", Website_link);
+        driver.close();
 
 
 
