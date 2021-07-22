@@ -44,6 +44,7 @@ public class Fórumteszt {
         options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.get(baseUrl);
 
     }
 
@@ -76,15 +77,22 @@ public class Fórumteszt {
  */
 
 
-    @Test
-    public void Login() {
-        driver.get(baseUrl);
+    public void Login_function(){
         WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
         email.sendKeys(email_adress);
         WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
         password.sendKeys(password_field);
         WebElement login_button = driver.findElement(By.xpath("//*[@id=\"indpl_login_box_180\"]/form/div[3]/div[2]/div[2]/input"));
         login_button.click();
+    }
+
+
+
+
+
+    @Test
+    public void Login() {
+        Login_function();
         WebElement logout = driver.findElement(By.cssSelector(".ahigh"));
         Assertions.assertEquals(true, logout.isDisplayed()); //ellenőrzés hogy a kilépési gomb meg van-e jelenítve
         driver.close();
@@ -95,7 +103,6 @@ public class Fórumteszt {
 
     @Test
     public void Logout() {
-        driver.get(baseUrl);
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
         WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
         email.sendKeys(email_adress);
@@ -104,7 +111,6 @@ public class Fórumteszt {
         WebElement login_button = driver.findElement(By.xpath("//*[@id=\"indpl_login_box_180\"]/form/div[3]/div[2]/div[2]/input"));
         login_button.click();
         WebElement logout = driver.findElement(By.cssSelector(".ahigh"));
-        ;
         logout.click();
         Assert.assertEquals("https://kilepes.blog.hu/", "https://kilepes.blog.hu/");
 
@@ -114,7 +120,6 @@ public class Fórumteszt {
 
     @Test
     public void List_data() {
-        driver.get(baseUrl);
         WebDriverWait waiting = new WebDriverWait(driver, 30);
         WebElement text = driver.findElement(By.xpath("/html/body/div[3]/div[1]/p[1]"));
         Assert.assertEquals("https://forum.index.hu/Topic/showTopicList?t=24", driver.getCurrentUrl());
@@ -123,7 +128,6 @@ public class Fórumteszt {
 
     @Test
     public void Inputdata() {
-        driver.get(baseUrl);
         WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
         email.sendKeys(email_adress);
         WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
@@ -146,7 +150,6 @@ public class Fórumteszt {
 
     @Test
     public void modify_data() {   //Belépünk az index fórumba majd pedig a profilbeállításoknál megváltoztatjuk a jelszavunkat
-        driver.get(baseUrl);
         WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
         email.sendKeys(email_adress);
         WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
@@ -168,7 +171,6 @@ public class Fórumteszt {
 
     @Test
     public void Getdata() {
-        driver.get(baseUrl);
         WebElement homepage = driver.findElement(By.cssSelector(".foot-forum > p:nth-child(2)"));
         System.out.println(homepage.getText());
     }
@@ -176,7 +178,6 @@ public class Fórumteszt {
 
     @Test
     public void Loop_through_list() {
-        driver.get(baseUrl);
         WebElement search_field = driver.findElement(By.cssSelector(".inp"));
         search_field.sendKeys("kutya");
         WebElement search_button = driver.findElement(By.cssSelector("#kereso > div > form > input.btnok"));
@@ -214,7 +215,6 @@ public class Fórumteszt {
 
     @Test
     public void Remove_Data() {
-        driver.get(baseUrl);
         WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
         email.sendKeys(email_adress);
         WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
