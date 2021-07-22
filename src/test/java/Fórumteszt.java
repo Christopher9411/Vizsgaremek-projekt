@@ -164,8 +164,8 @@ public class Fórumteszt {
     }
 
 
-    @Test
-    public void adat_modosítása() {   //Belépünk az index fórumba majd pedig a profilbeállításoknál megváltoztatjuk a jelszavunkat
+    
+    /*public void adat_modosítása() {   //Belépünk az index fórumba majd pedig a profilbeállításoknál megváltoztatjuk a jelszavunkat
         WebDriver driver = new ChromeDriver();
         driver.get(baseUrl);
         driver.findElement(By.cssSelector("#qc-cmp2-ui > div.qc-cmp2-footer.qc-cmp2-footer-overlay.qc-cmp2-footer-scrolled > div > button.css-k8o10q")).click();
@@ -193,7 +193,7 @@ public class Fórumteszt {
         mentés_gomb.click();
        driver.quit();
     }
-
+*/
 
     @Test
     public void Adatkinyerés() {
