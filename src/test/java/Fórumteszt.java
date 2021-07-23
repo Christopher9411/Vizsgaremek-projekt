@@ -45,8 +45,15 @@ public class Fórumteszt {
         options.setExperimentalOption("useAutomationExtension", false);
         options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         driver = new ChromeDriver(options);
+        driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(baseUrl);
+
+
+
+
+
+
 
     }
 
@@ -173,7 +180,9 @@ public void Logout_function(){
         website.clear();
         website.sendKeys("wwww.teszterjózsi.hu");
          Terms_of_Service();
-         Assert.assertEquals("wwww.teszterjózsi.hu", website.getText());
+        String text= driver.findElement(By.xpath("//*[@id=\"usersettings\"]/tbody/tr[6]/td[2]/input")).getAttribute("value");
+        WebDriverWait waiting = new WebDriverWait(driver, 10);
+        Assert.assertEquals("wwww.teszterjózsi.hu", text);
         driver.close();
     }
 
@@ -207,7 +216,7 @@ public void Logout_function(){
         WebElement page9 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[10]"));
         page9.click();
        String Website_link = driver.getCurrentUrl();
-        Assert.assertEquals("https://forum.index.hu/Search/showTopicResult?tr_start=240&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=", Website_link);
+        Assert.assertNull("https://forum.index.hu/Search/showTopicResult?tr_start=240&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=", Website_link);
         driver.close();
 
 
