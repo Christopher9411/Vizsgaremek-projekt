@@ -104,12 +104,7 @@ public class Fórumteszt {
     @Test
     public void Logout() {
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-        WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
-        email.sendKeys(email_adress);
-        WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
-        password.sendKeys(password_field);
-        WebElement login_button = driver.findElement(By.xpath("//*[@id=\"indpl_login_box_180\"]/form/div[3]/div[2]/div[2]/input"));
-        login_button.click();
+        Login_function();
         WebElement logout = driver.findElement(By.cssSelector(".ahigh"));
         logout.click();
         Assert.assertEquals("https://kilepes.blog.hu/", "https://kilepes.blog.hu/");
@@ -120,20 +115,20 @@ public class Fórumteszt {
 
     @Test
     public void List_data() {
-        WebDriverWait waiting = new WebDriverWait(driver, 30);
-        WebElement text = driver.findElement(By.xpath("/html/body/div[3]/div[1]/p[1]"));
-        Assert.assertEquals("https://forum.index.hu/Topic/showTopicList?t=24", driver.getCurrentUrl());
+        WebElement search_field = driver.findElement(By.cssSelector(".inp"));
+        search_field.sendKeys("autó");
+        WebElement search_button = driver.findElement(By.cssSelector("#kereso > div > form > input.btnok"));
+        search_button.click();
+        String topic_listing = driver.getCurrentUrl();
+        Assert.assertEquals("https://forum.index.hu/Search/fastSearchTopic", topic_listing);
+        //optionally put scrolling down here
+
     }
 
 
     @Test
     public void Inputdata() {
-        WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
-        email.sendKeys(email_adress);
-        WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
-        password.sendKeys(password_field);
-        WebElement login_button = driver.findElement(By.xpath("//*[@id=\"indpl_login_box_180\"]/form/div[3]/div[2]/div[2]/input"));
-        login_button.click();
+        Login_function();
         WebElement settings = driver.findElement(By.cssSelector(".boxbold > li:nth-child(3)"));
         settings.click();
         WebElement about_me = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/form/table/tbody/tr[7]/td[2]/textarea"));
@@ -150,12 +145,7 @@ public class Fórumteszt {
 
     @Test
     public void modify_data() {   //Belépünk az index fórumba majd pedig a profilbeállításoknál megváltoztatjuk a jelszavunkat
-        WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
-        email.sendKeys(email_adress);
-        WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
-        password.sendKeys(password_field);
-        WebElement login_button = driver.findElement(By.xpath("//*[@id=\"indpl_login_box_180\"]/form/div[3]/div[2]/div[2]/input"));
-        login_button.click();
+        Login_function();
         WebElement settings = driver.findElement(By.cssSelector(".boxbold > li:nth-child(3)"));
         settings.click();
         WebElement website = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/form/table/tbody/tr[6]/td[2]/input"));
@@ -215,12 +205,7 @@ public class Fórumteszt {
 
     @Test
     public void Remove_Data() {
-        WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
-        email.sendKeys(email_adress);
-        WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
-        password.sendKeys(password_field);
-        WebElement login_button = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_container > input"));
-        login_button.click();
+        Login_function();
         WebDriverWait waiting = new WebDriverWait(driver, 40);
         waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".boxbold > li:nth-child(4) > a:nth-child(2)"))).click();
         WebElement history_erase = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/div[1]/button"));
