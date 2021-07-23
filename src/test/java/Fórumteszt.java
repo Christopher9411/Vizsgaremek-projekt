@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Collections;
 import java.util.concurrent.TimeUnit;
-import java.util.function.BooleanSupplier;
+
 
 
 //logindata goes here
@@ -29,6 +28,9 @@ public class Fórumteszt {
     private Assertions Assert;
     private String Weboldal_szövege;
     WebDriver driver;
+
+
+
     // WebElement jelszómező = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
     // WebElement email_mező = driver.findElement(By.id("nick"));
 
@@ -89,6 +91,26 @@ public class Fórumteszt {
 
 
 
+    public void Terms_of_Service(){
+        WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
+        terms_of_service.click();
+        WebDriverWait waiting = new WebDriverWait(driver, 10);
+        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
+    }
+
+
+
+
+
+
+
+public void Logout_function(){
+    WebElement logout = driver.findElement(By.cssSelector(".ahigh"));
+    logout.click();
+    }
+
+
+
 
     @Test
     public void Login() {
@@ -105,8 +127,7 @@ public class Fórumteszt {
     public void Logout() {
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
         Login_function();
-        WebElement logout = driver.findElement(By.cssSelector(".ahigh"));
-        logout.click();
+        Logout_function();
         Assert.assertEquals("https://kilepes.blog.hu/", "https://kilepes.blog.hu/");
 
 
@@ -151,11 +172,8 @@ public class Fórumteszt {
         WebElement website = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/form/table/tbody/tr[6]/td[2]/input"));
         website.clear();
         website.sendKeys("wwww.teszterjózsi.hu");
-        WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
-        terms_of_service.click();
-        WebDriverWait waiting = new WebDriverWait(driver, 10);
-        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
-        Assert.assertEquals("wwww.teszterjózsi.hu", website.getText());
+         Terms_of_Service();
+         Assert.assertEquals("wwww.teszterjózsi.hu", website.getText());
         driver.close();
     }
 
@@ -172,7 +190,7 @@ public class Fórumteszt {
         search_field.sendKeys("kutya");
         WebElement search_button = driver.findElement(By.cssSelector("#kereso > div > form > input.btnok"));
         search_button.click();
-        WebElement page2 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[1]"));
+        WebElement page2 = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/form[1]/table/tbody/tr/td[1]/a[1]"));
         page2.click();
         WebElement page3 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[4]"));
         page3.click();
@@ -206,21 +224,25 @@ public class Fórumteszt {
     @Test
     public void Remove_Data() {
         Login_function();
-        WebDriverWait waiting = new WebDriverWait(driver, 40);
-        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".boxbold > li:nth-child(4) > a:nth-child(2)"))).click();
-        WebElement history_erase = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/div[1]/button"));
-        history_erase.click();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        Alert alert = driver.switchTo().alert();
-        alert.accept();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        WebElement topic_history = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td[1]"));
-        Assert.assertFalse((BooleanSupplier) topic_history); //Hogyan lehetne itt ellenőrizni azt hogy a topic_előzmények teljesen üres?
-        driver.close();
+        By byElement = By.cssSelector("td.histe_subject:nth-child(1)");
+        WebElement settings = driver.findElement(By.cssSelector(".boxbold > li:nth-child(3)"));
+        settings.click();
+        WebElement about_me = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/form/table/tbody/tr[7]/td[2]/textarea"));
+        about_me.clear();
+         Terms_of_Service();
+         String text_field =about_me.getText();
+        Assert.assertNull(text_field);
+
+
+
+
+
+        //*[@id="content1col"]/tbody/tr[2]/td[1]
+        //*[@id="content1col"]/tbody/tr[2]
+
+
     }
-
-
-        }
+}
 
 
 
