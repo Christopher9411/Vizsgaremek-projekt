@@ -227,11 +227,16 @@ public void Logout_function(){
         By byElement = By.cssSelector("td.histe_subject:nth-child(1)");
         WebElement settings = driver.findElement(By.cssSelector(".boxbold > li:nth-child(3)"));
         settings.click();
-        WebElement about_me = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/form/table/tbody/tr[7]/td[2]/textarea"));
+        WebElement about_me = driver.findElement(By.cssSelector("tr.mainsettings:nth-child(7) > td:nth-child(2) > textarea:nth-child(1)"));
         about_me.clear();
-         Terms_of_Service();
-         String text_field =about_me.getText();
-        Assert.assertNull(text_field);
+        Terms_of_Service();
+        WebDriverWait waiting = new WebDriverWait(driver, 40);
+        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("tr.mainsettings:nth-child(7) > td:nth-child(2) > textarea:nth-child(1)")));
+        String text = driver.findElement(By.cssSelector("tr.mainsettings:nth-child(7) > td:nth-child(2) > textarea:nth-child(1)")).getText();
+        Assert.assertTrue(text.isEmpty());
+
+
+        //*[@id="usersettings"]/tbody/tr[7]/td[2]/textarea
 
 
 
