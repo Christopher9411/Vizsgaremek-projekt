@@ -93,7 +93,7 @@ public class Fórumteszt {
         email.sendKeys(email_adress);
         WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
         password.sendKeys(password_field);
-        WebElement login_button = driver.findElement(By.xpath("//*[@id=\"indpl_login_box_180\"]/form/div[3]/div[2]/div[2]/input"));
+        WebElement login_button = driver.findElement(By.xpath("//*[contains(@class,'indpl_submit')]"));
         login_button.click();
     }
 
@@ -154,7 +154,7 @@ public void Logout_function(){
         //optionally put scrolling down here
 
     }
-                         
+
     @Test
     public void Inputdata() {
         Login_function();
@@ -177,7 +177,7 @@ public void Logout_function(){
         Login_function();
         WebElement settings = driver.findElement(By.cssSelector(".boxbold > li:nth-child(3)"));
         settings.click();
-        WebElement website = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/form/table/tbody/tr[6]/td[2]/input"));
+        WebElement website = driver.findElement(By.xpath("//*[contains(@name,'homepage')]"));
         website.clear();
         website.sendKeys("wwww.teszterjózsi.hu");
          Terms_of_Service();
