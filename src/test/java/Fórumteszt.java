@@ -244,16 +244,31 @@ public void Logout_function(){
 
 
         //*[@id="usersettings"]/tbody/tr[7]/td[2]/textarea
-
-
-
-
-
         //*[@id="content1col"]/tbody/tr[2]/td[1]
         //*[@id="content1col"]/tbody/tr[2]
 
 
     }
+
+
+
+
+@Test
+    public void Upload_profileImage(){
+    Login_function();
+    WebElement profile = driver.findElement(By.xpath("//*[contains(@id,'icon-user')]"));
+    profile.click();
+    WebElement settings = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/ul/li[4]/a"));
+    settings.click();
+}
+
+
+
+
+
+
+
+
 }
 
 
