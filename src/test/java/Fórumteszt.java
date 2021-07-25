@@ -154,14 +154,13 @@ public void Logout_function(){
         //optionally put scrolling down here
 
     }
-
-
+                         
     @Test
     public void Inputdata() {
         Login_function();
         WebElement settings = driver.findElement(By.cssSelector(".boxbold > li:nth-child(3)"));
         settings.click();
-        WebElement about_me = driver.findElement(By.xpath("/html/body/div[2]/div/table/tbody/tr[2]/td[2]/form/table/tbody/tr[7]/td[2]/textarea"));
+        WebElement about_me = driver.findElement(By.xpath(" //*[contains(@name,'introduction')]"));
         about_me.clear();
         about_me.click();
         about_me.sendKeys("Ez egy tesztfiók amely Chromedriveres automata tesztelésre lett létrehozva.");
