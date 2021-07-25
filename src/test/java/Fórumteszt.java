@@ -147,7 +147,7 @@ public void Logout_function(){
     public void List_data() {
         WebElement search_field = driver.findElement(By.cssSelector(".inp"));
         search_field.sendKeys("autó");
-        WebElement search_button = driver.findElement(By.cssSelector("#kereso > div > form > input.btnok"));
+        WebElement search_button = driver.findElement(By.xpath("//*[contains(@class,'btnok')]"));
         search_button.click();
         String topic_listing = driver.getCurrentUrl();
         Assert.assertEquals("https://forum.index.hu/Search/fastSearchTopic", topic_listing);
@@ -164,10 +164,7 @@ public void Logout_function(){
         about_me.clear();
         about_me.click();
         about_me.sendKeys("Ez egy tesztfiók amely Chromedriveres automata tesztelésre lett létrehozva.");
-        WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
-        terms_of_service.click();
-        WebDriverWait waiting = new WebDriverWait(driver, 40);
-        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
+        Terms_of_Service();
         Assert.assertNotNull(about_me);
     }
 
@@ -237,7 +234,7 @@ public void Logout_function(){
         By byElement = By.cssSelector("td.histe_subject:nth-child(1)");
         WebElement settings = driver.findElement(By.cssSelector(".boxbold > li:nth-child(3)"));
         settings.click();
-        WebElement about_me = driver.findElement(By.cssSelector("tr.mainsettings:nth-child(7) > td:nth-child(2) > textarea:nth-child(1)"));
+        WebElement about_me = driver.findElement(By.cssSelector(" //*[contains(@name,'introduction')]"));
         about_me.clear();
         Terms_of_Service();
         WebDriverWait waiting = new WebDriverWait(driver, 40);
