@@ -39,6 +39,7 @@ public class Fórumteszt {
         //Chromedriver/ weboldal deklarására és meghívása minden egyes tesztesethez
         System.setProperty("webdriver.chrome.driver", "C:/WebDriver/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
         options.addArguments("user-data-dir=c:/Users/Tatsuya Hiroki/AppData/Local/Google/Chrome/User Data");
         options.addArguments("--disable-notifications"); // visszautasít minden böngésző felkérést pl: értesítések küldése
         options.addArguments("start-maximized"); // teljes képernyőben való használat
@@ -48,6 +49,7 @@ public class Fórumteszt {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(baseUrl);
+
 
 
 
