@@ -13,26 +13,22 @@ import java.util.Collections;
 import java.util.concurrent.TimeUnit;
 
 
-
 //logindata goes here
 
 
-public class Fórumteszt {
+class Forumteszt {
     String baseUrl = "https://forum.index.hu/Topic/showTopicList";
     String email_adress = "nagy.kristof1994@gmail.com";
     String password_field = "teszt123";
-    String jelszóismét = "teszt123";
+    String jelszoismet = "teszt123";
     String Nickname = "Teszter Jakab";
-    String Bemutatkozás = "Ez egy tesztfiók amely Chromedriveres automata tesztelésre lett létrehozva.";
-    String Honlapcím = "wwww.tesztweboldal.hu";
+    String Bemutatkozas = "Ez egy tesztfiók amely Chromedriveres automata tesztelésre lett létrehozva.";
+    String Honlapcim = "wwww.tesztweboldal.hu";
     private Assertions Assert;
-    private String Weboldal_szövege;
+    private String Weboldal_szovege;
     WebDriver driver;
+    String File = "C:/Users/Tatsuya Hiroki/Downloads/stock-image.jpg";
 
-
-
-    // WebElement jelszómező = driver.findElement(By.cssSelector("#indpl_login_box_180 > form > div.indpl_login > div.indpl_formContainer > div.indpl_inputs > input.indpl_text.indpl_passwd"));
-    // WebElement email_mező = driver.findElement(By.id("nick"));
 
     @BeforeEach
     public void BeforeEach() {
@@ -49,12 +45,6 @@ public class Fórumteszt {
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(baseUrl);
-
-
-
-
-
-
 
 
     }
@@ -88,7 +78,7 @@ public class Fórumteszt {
  */
 
 
-    public void Login_function(){
+    public void Login_function() {
         WebElement email = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
         email.sendKeys(email_adress);
         WebElement password = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_passwd\"]"));
@@ -98,9 +88,7 @@ public class Fórumteszt {
     }
 
 
-
-
-    public void Terms_of_Service(){
+    public void Terms_of_Service() {
         WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
         terms_of_service.click();
         WebDriverWait waiting = new WebDriverWait(driver, 10);
@@ -108,17 +96,10 @@ public class Fórumteszt {
     }
 
 
-
-
-
-
-
-public void Logout_function(){
-    WebElement logout = driver.findElement(By.cssSelector(".ahigh"));
-    logout.click();
+    public void Logout_function() {
+        WebElement logout = driver.findElement(By.cssSelector(".ahigh"));
+        logout.click();
     }
-
-
 
 
     @Test
@@ -177,8 +158,8 @@ public void Logout_function(){
         WebElement website = driver.findElement(By.xpath("//*[contains(@name,'homepage')]"));
         website.clear();
         website.sendKeys("wwww.teszterjózsi.hu");
-         Terms_of_Service();
-        String text= driver.findElement(By.xpath("//*[@id=\"usersettings\"]/tbody/tr[6]/td[2]/input")).getAttribute("value");
+        Terms_of_Service();
+        String text = driver.findElement(By.xpath("//*[@id=\"usersettings\"]/tbody/tr[6]/td[2]/input")).getAttribute("value");
         WebDriverWait waiting = new WebDriverWait(driver, 10);
         Assert.assertEquals("wwww.teszterjózsi.hu", text);
         driver.close();
@@ -213,19 +194,15 @@ public void Logout_function(){
         page8.click();
         WebElement page9 = driver.findElement(By.xpath("//*[@id=\"maintd\"]/form[1]/table/tbody/tr/td[1]/a[10]"));
         page9.click();
-       String Website_link = driver.getCurrentUrl();
+        String Website_link = driver.getCurrentUrl();
         Assert.assertEquals("https://forum.index.hu/Search/showTopicResult?tr_start=240&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=", Website_link);
         driver.close();
-
-
-
-
 
 
         //String search_results = "https://forum.index.hu/Search/showTopicResult?tr_start=30&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=";
         //Assert.assertEquals(search_results, "https://forum.index.hu/Search/showTopicResult?tr_start=30&tr_step=30&o=10&tq_text=kutya&tq_in=1&tq_act=&tq_cre=0&tq_user=");
 
-        }
+    }
 
 
     @Test
@@ -251,25 +228,53 @@ public void Logout_function(){
     }
 
 
+    @Test
+    public void Upload_profileImage() {
+        Login_function();
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(@id,'icon-user')]"))).click();
+        WebElement settings = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/ul/li[4]/a"));
+        settings.click();
+        WebElement ProfileImage = driver.findElement(By.xpath("/html/body/main/div/div/div[1]/div[1]/div[2]/div[2]"));
+        ProfileImage.click();
+        WebElement uploadprofilepic = driver.findElement(By.xpath("/html/body/main/div/div/div[1]/div[1]/div[2]/section[2]/div/form[1]/div[2]/label"));
+        uploadprofilepic.click();
 
 
-@Test
-    public void Upload_profileImage(){
-    Login_function();
-    WebElement profile = driver.findElement(By.xpath("//*[contains(@id,'icon-user')]"));
-    profile.click();
-    WebElement settings = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/ul/li[4]/a"));
-    settings.click();
+    }
+
+
+    @Test
+
+    public void logInDesktopWithFileInput() {
+        FileUtil utils = new FileUtil();
+        String[] credential = utils.readCredential();
+        WebElement email_adress = driver.findElement(By.xpath("//*[@class=\"indpl_text indpl_email\"]"));
+        email_adress.sendKeys(credential[0]);
+        WebElement password = driver.findElement(By.xpath(("//*[@class=\"indpl_text indpl_passwd\"]")));
+        password.sendKeys(credential[1]);
+        WebElement login_button = driver.findElement(By.xpath("//*[contains(@class,'indpl_submit')]"));
+        login_button.click();
+        WebElement logout = driver.findElement(By.cssSelector(".ahigh"));
+        Assertions.assertEquals(true, logout.isDisplayed()); //ellenőrzés hogy a kilépési gomb meg van-e jelenítve
+        driver.close();
+    }
+
+
+    @Test
+    public void SaveTextIntoFile() {
+
+
+
+
+    }
+
+
 }
 
 
 
 
-
-
-
-
-}
 
 
 
