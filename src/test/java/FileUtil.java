@@ -8,6 +8,9 @@ import java.util.Scanner;
 
 public class FileUtil {
 
+    public static void writeToFile() {
+    }
+
     public String[] readCredential() {
         String[] result = new String[2];
         try {
@@ -28,16 +31,12 @@ public class FileUtil {
         return result;
     }
 
-    public String writeToFile(String title, String paragraph) {
+    public static void writeToFile(String privacy_text) {
         try {
-            FileWriter textFile = new FileWriter("searchResults.txt");
-
-            textFile.append(title + " : \n" + paragraph);
-
+            FileWriter textFile = new FileWriter("Privacy.txt");
             textFile.close();
-            return null;
         } catch (IOException e) {
-            return e.getMessage();
+            e.getMessage();
         }
 
     }
