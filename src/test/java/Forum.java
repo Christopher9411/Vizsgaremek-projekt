@@ -106,6 +106,25 @@ public class Forum {
     }
 
 
+
+    public static void readfromfile() {
+        FileUtil2 utils = new FileUtil2();
+        String credential = utils.readCredential();
+        WebElement search_field = driver.findElement(SEARCH_FIELD);
+        search_field.sendKeys(credential);
+        WebElement search_button = driver.findElement(SEARCH_BUTTON);
+        search_button.click();
+        Assert.assertEquals("https://forum.index.hu/Topic/showTopicList", driver.getCurrentUrl());
+
+    }
+
+
+
+
+
+
+
+
 }
 
 

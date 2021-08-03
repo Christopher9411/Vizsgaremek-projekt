@@ -16,19 +16,22 @@ public class Profile {
     private static final By ABOUT_ME = By.cssSelector("tr.mainsettings:nth-child(7) > td:nth-child(2) > textarea:nth-child(1)");
     private static final By SEARCH_FIELD = By.cssSelector(".inp");
     private static final By SEARCH_BUTTON = By.xpath("//*[contains(@class,'btnok')]");
-    private static final By WEBSITE = By.cssSelector("tr.mainsettings:nth-child(6) > td:nth-child(2) > input:nth-child(1)");
+    private static final By WEBSITE = By.xpath("//*[contains(@name,'homepage')]");
     private static final By WEBSITE_FIELD = By.xpath("//*[@id=\"usersettings\"]/tbody/tr[6]/td[2]/input");
 
 
     public static void Add_data() {
         WebElement settings = driver.findElement(SETTINGS);
         settings.click();
-        WebDriverWait wait = new WebDriverWait(driver, 30);
-        wait.until(ExpectedConditions.visibilityOfElementLocated((ABOUT_ME))).click();
+        WebDriverWait wait = new WebDriverWait(driver,5);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(ABOUT_ME));
         WebElement about_me_field = driver.findElement(ABOUT_ME);
         about_me_field.clear();
         about_me_field.sendKeys("Ez egy tesztfiók amely Chromedriveres automata tesztelésre lett létrehozva.");
-        Terms_of_ServiceMethod.TermsOfService();
+        WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
+        terms_of_service.click();
+        WebDriverWait waiting = new WebDriverWait(driver, 10);
+        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
         Assert.assertNotNull(about_me_field);
     }
 
@@ -59,7 +62,10 @@ public class Profile {
         WebElement about_me = driver.findElement((ABOUT_ME));
         about_me.click();
         about_me.clear();
-        Terms_of_ServiceMethod.TermsOfService();
+        WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
+        terms_of_service.click();
+        WebDriverWait waiting = new WebDriverWait(driver, 10);
+        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
         String about_me_field = driver.findElement((ABOUT_ME)).getText();
         Assert.assertTrue(about_me_field.isEmpty());
     }
@@ -94,9 +100,12 @@ public class Profile {
         WebElement website = driver.findElement((WEBSITE));
         website.clear();
         website.sendKeys("wwww.teszterjózsi.hu");
-        Terms_of_ServiceMethod.TermsOfService();
-        String text = driver.findElement((WEBSITE_FIELD)).getAttribute("value");
+        WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
+        terms_of_service.click();
         WebDriverWait waiting = new WebDriverWait(driver, 10);
+        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
+        String text = driver.findElement((WEBSITE_FIELD)).getAttribute("value");
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         Assert.assertEquals("wwww.teszterjózsi.hu", text);
         driver.close();
 

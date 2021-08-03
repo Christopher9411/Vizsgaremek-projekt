@@ -10,8 +10,8 @@ import static org.openqa.selenium.By.*;
 
 public class Main_page {
     static WebDriver driver = Util.getDriver();
-   // private static final By PAYEE_FIRSTNAME = xpath("//*[contains(@id,'customer.firstName')]");
-   //Login function
+    // private static final By PAYEE_FIRSTNAME = xpath("//*[contains(@id,'customer.firstName')]");
+    //Login function
     private static final By EMAIL_ADRESS = xpath("//*[@class=\"indpl_text indpl_email\"]");
     private static final By PASSWORD = xpath("//*[@class=\"indpl_text indpl_passwd\"]");
     private static final By LOGIN_BUTTON = xpath("//*[contains(@class,'indpl_submit')]");
@@ -21,41 +21,32 @@ public class Main_page {
     //REGISTRATION
     private static final By REGISTRATION_EMAIL_ADRESS = xpath("//input[@id='nick']");
     private static final By REGISTRATION_PASSWORD = xpath("passwd");
-    private static final By REGISTRATION_PASSWORD_AGAIN =id("passwd2");
+    private static final By REGISTRATION_PASSWORD_AGAIN = id("passwd2");
     private static final By NICKNAME = id("forum_nick");
 
 
+    public static void register() {
+        WebElement registration_button = driver.findElement(By.xpath("//*[@class='indpl_reg_button']"));
+        registration_button.click();
+        WebElement email_adress = driver.findElement(By.xpath("//input[@id='nick']"));
+        email_adress.sendKeys("nagy.kristof1994@gmail.com");
+        WebElement password_field = driver.findElement(By.id("passwd"));
+        password_field.sendKeys("teszt123");
+        WebElement password_again = driver.findElement(By.id("passwd2"));
+        password_again.sendKeys("teszt123");
+        WebElement nickname = driver.findElement(By.id("forum_nick"));
+        nickname.sendKeys("Teszter Józsi");
+        WebElement webpage = driver.findElement(By.id("forum_url"));
+        webpage.sendKeys("http//1234.hu");
+        WebElement registration_confirm = driver.findElement(By.xpath("//*[@id=\"regsubmit\"]"));
+        registration_confirm.click();
+        WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
+        terms_of_service.click();
+        WebDriverWait waiting = new WebDriverWait(driver, 10);
+        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
 
 
-
-        public static void register() {
-            WebElement registration_button = driver.findElement(By.xpath("//*[@class='indpl_reg_button']"));
-            registration_button.click();
-            WebElement email_adress = driver.findElement(By.xpath("//input[@id='nick']"));
-            email_adress.sendKeys("nagy.kristof1994@gmail.com");
-            WebElement password_field = driver.findElement(By.id("passwd"));
-            password_field.sendKeys("teszt123");
-            WebElement password_again = driver.findElement(By.id("passwd2"));
-            password_again.sendKeys("teszt123");
-            WebElement nickname = driver.findElement(By.id("forum_nick"));
-            nickname.sendKeys("Teszter Józsi");
-            WebElement webpage = driver.findElement(By.id("forum_url"));
-            webpage.sendKeys("http//1234.hu");
-            WebElement registration_confirm = driver.findElement(By.xpath("//*[@id=\"regsubmit\"]"));
-            registration_confirm.click();
-            WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
-            terms_of_service.click();
-            WebDriverWait waiting = new WebDriverWait(driver, 10);
-            waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
-
-
-
-        }
-
-
-
-
-
+    }
 
 
     public static void login() {
@@ -65,17 +56,12 @@ public class Main_page {
         password.sendKeys("teszt123");
         WebElement login_button = driver.findElement((LOGIN_BUTTON));
         login_button.click();
-    WebDriverWait wait = new WebDriverWait(driver,30);
-    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ahigh")));
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ahigh")));
         WebElement logout_button = driver.findElement(LOGOUT_BUTTON);
         Assert.assertTrue(logout_button.isDisplayed());
 
-}
-
-
-
-
-
+    }
 
 
     public static void logout() {
@@ -94,9 +80,18 @@ public class Main_page {
         password.sendKeys(credential[1]);
         WebElement login_button = driver.findElement((LOGIN_BUTTON));
         login_button.click();
-        WebElement logout = driver.findElement( LOGOUT_BUTTON);
+        WebElement logout = driver.findElement(LOGOUT_BUTTON);
         Assertions.assertEquals(true, logout.isDisplayed()); //ellenőrzés hogy a kilépési gomb meg van-e jelenítve
         driver.close();
+    }
+
+
+    public static void getText() {
+        WebElement text = driver.findElement(cssSelector(".foot-forum > p:nth-child(2)"));
+        String website_text = text.getText();
+        System.out.println(website_text);
+        Assert.assertEquals("Magyarország első és legnagyobb fórum szolgáltatása. A web kettő pre-bétája, amit 1997 óta töltenek meg tartalommal a fórumlakók. Fórumok változatos témákban, hangnemben, moderálva. Ha nem csak megosztani akarsz, hanem diskurálni egy egy témában, csatlakozz Te is, és ha kitartó vagy, társakra találhatsz.", website_text);
+
     }
 
 

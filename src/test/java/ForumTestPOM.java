@@ -1,25 +1,17 @@
-import org.junit.Assert;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.util.concurrent.TimeUnit;
 
 
 public class ForumTestPOM {
     private WebDriver driver = Util.getDriver();
 
 
-
+//Main_page
 
     @Test
-    public void Register(){
+    public void Register() {
         Main_page.register();
     }
-
 
 
     @Test
@@ -38,10 +30,40 @@ public class ForumTestPOM {
 
 
     @Test
+    public void Read_from_file() {
+        Main_page.fileread();
+
+    }
+
+
+    @Test
+    public void Print_text_from_main_page() {
+        Main_page.getText();
+    }
+
+
+    //Forum
+
+    @Test
     public void List_information() {
         Forum.ListData();
     }
 
+    @Test
+    public void loop_through_list() {
+        Forum.ListLooping();
+
+    }
+
+
+    @Test
+    public void read_multiple_info() {
+        Forum.readfromfile();
+
+    }
+
+
+    //Settings
 
     @Test
     public void add_profile_information() {
@@ -58,14 +80,6 @@ public class ForumTestPOM {
     }
 
 
-
-    @Test
-    public void loop_through_list() {
-        Forum.ListLooping();
-
-    }
-
-
     @Test
     public void remove_information() {
         Main_page.login();
@@ -74,24 +88,8 @@ public class ForumTestPOM {
 
 
     @Test
-    public void Read_from_file() {
-        Main_page.fileread();
-
-    }
-
-
-    @Test
-    public void read_multiple_info() {
-        InputSearchTermsFromFileMethod.readfromfile();
-
-    }
-
-
-
-
-    @Test
     public void writeprivacytextintodocument() {
-        PrivacyDisclaimerMethod.privacy_save_into_file();
+        Privacy_Page.save_privacy_text();
 
 
     }
