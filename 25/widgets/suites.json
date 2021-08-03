@@ -1,0 +1,26 @@
+{
+  "total" : 2,
+  "items" : [ {
+    "uid" : "42a48ed7a3b296330cf45730eb464c72",
+    "name" : "ForumTestPOM",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 14
+    }
+  }, {
+    "uid" : "7e0cef8f5490db52d5626b138e68149d",
+    "name" : "Fórumteszt",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}
