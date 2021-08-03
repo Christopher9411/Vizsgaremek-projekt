@@ -23,6 +23,10 @@ public class Main_page {
     private static final By REGISTRATION_PASSWORD = xpath("passwd");
     private static final By REGISTRATION_PASSWORD_AGAIN = id("passwd2");
     private static final By NICKNAME = id("forum_nick");
+    private static final By WEBPAGE = id("forum_url");
+    private static final By REGISTRATION_CONFIRM = xpath("//*[@id=\"regsubmit\"]");
+    private static final By TERMS_OF_SERVICE_CHECKBOX = cssSelector(".input--checkbox__checkbox");
+    private static final By CAPTCHA_BOX = xpath("//*[@class='recaptcha-checkbox-border']");
 
 
     public static void register() {
@@ -38,12 +42,9 @@ public class Main_page {
         nickname.sendKeys("Teszter Józsi");
         WebElement webpage = driver.findElement(By.id("forum_url"));
         webpage.sendKeys("http//1234.hu");
-        WebElement registration_confirm = driver.findElement(By.xpath("//*[@id=\"regsubmit\"]"));
-        registration_confirm.click();
-        WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
+        WebElement terms_of_service = driver.findElement((TERMS_OF_SERVICE_CHECKBOX));
         terms_of_service.click();
-        WebDriverWait waiting = new WebDriverWait(driver, 10);
-        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
+
 
 
     }

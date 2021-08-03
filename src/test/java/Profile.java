@@ -1,6 +1,4 @@
 import org.junit.Assert;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,20 +16,22 @@ public class Profile {
     private static final By SEARCH_BUTTON = By.xpath("//*[contains(@class,'btnok')]");
     private static final By WEBSITE = By.xpath("//*[contains(@name,'homepage')]");
     private static final By WEBSITE_FIELD = By.xpath("//*[@id=\"usersettings\"]/tbody/tr[6]/td[2]/input");
+    private static final By TERMS_OF_SERVICE = By.xpath("//*[@id=\"chk_policy\"]");
+    private static final By CONFIRM_CHANGES = By.cssSelector(("#btn_settings_ok"));
 
 
     public static void Add_data() {
         WebElement settings = driver.findElement(SETTINGS);
         settings.click();
-        WebDriverWait wait = new WebDriverWait(driver,5);
+        WebDriverWait wait = new WebDriverWait(driver, 5);
         wait.until(ExpectedConditions.visibilityOfElementLocated(ABOUT_ME));
         WebElement about_me_field = driver.findElement(ABOUT_ME);
         about_me_field.clear();
         about_me_field.sendKeys("Ez egy tesztfiók amely Chromedriveres automata tesztelésre lett létrehozva.");
-        WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
+        WebElement terms_of_service = driver.findElement(TERMS_OF_SERVICE);
         terms_of_service.click();
         WebDriverWait waiting = new WebDriverWait(driver, 10);
-        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
+        waiting.until(ExpectedConditions.visibilityOfElementLocated((CONFIRM_CHANGES))).click();
         Assert.assertNotNull(about_me_field);
     }
 
@@ -62,10 +62,10 @@ public class Profile {
         WebElement about_me = driver.findElement((ABOUT_ME));
         about_me.click();
         about_me.clear();
-        WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
+        WebElement terms_of_service = driver.findElement((TERMS_OF_SERVICE));
         terms_of_service.click();
         WebDriverWait waiting = new WebDriverWait(driver, 10);
-        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
+        waiting.until(ExpectedConditions.visibilityOfElementLocated((CONFIRM_CHANGES))).click();
         String about_me_field = driver.findElement((ABOUT_ME)).getText();
         Assert.assertTrue(about_me_field.isEmpty());
     }
@@ -97,15 +97,16 @@ public class Profile {
     public static void modify_data() {
         WebElement settings = driver.findElement(SETTINGS);
         settings.click();
+        WebDriverWait waiting = new WebDriverWait(driver, 10);
+        waiting.until(ExpectedConditions.visibilityOfElementLocated(WEBSITE));
         WebElement website = driver.findElement((WEBSITE));
         website.clear();
         website.sendKeys("wwww.teszterjózsi.hu");
-        WebElement terms_of_service = driver.findElement(By.xpath("//*[@id=\"chk_policy\"]"));
+        WebElement terms_of_service = driver.findElement(TERMS_OF_SERVICE);
         terms_of_service.click();
-        WebDriverWait waiting = new WebDriverWait(driver, 10);
-        waiting.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#btn_settings_ok"))).click();
+        WebDriverWait wait= new WebDriverWait(driver, 10);
+        waiting.until(ExpectedConditions.visibilityOfElementLocated((CONFIRM_CHANGES))).click();
         String text = driver.findElement((WEBSITE_FIELD)).getAttribute("value");
-        WebDriverWait wait = new WebDriverWait(driver, 10);
         Assert.assertEquals("wwww.teszterjózsi.hu", text);
         driver.close();
 
@@ -127,12 +128,6 @@ public class Profile {
         driver.close();
     }
 */
-
-
-
-
-
-
 
 
 }
