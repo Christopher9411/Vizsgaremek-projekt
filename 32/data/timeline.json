@@ -1,0 +1,2292 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "DESKTOP-JJVKPMQ",
+    "children" : [ {
+      "name" : "18100@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "add_profile_information()",
+        "uid" : "ad064a6461c6f406",
+        "parentUid" : "735a21685fa1cc5cb4c25a135f24c182",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627910002070,
+          "stop" : 1627910002076,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "735a21685fa1cc5cb4c25a135f24c182"
+    }, {
+      "name" : "14936@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "9ef5c0d77d386c0f",
+        "parentUid" : "991364a8b6fdcf267e68085c18ec128c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627962361988,
+          "stop" : 1627962363229,
+          "duration" : 1241
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "991364a8b6fdcf267e68085c18ec128c"
+    }, {
+      "name" : "17032@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "befe68375d1c8c50",
+        "parentUid" : "932b67d61be60ed5cdbe4c16f32d4a4f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627927099961,
+          "stop" : 1627927100207,
+          "duration" : 246
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "932b67d61be60ed5cdbe4c16f32d4a4f"
+    }, {
+      "name" : "12388@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "4b034b263b3e2be0",
+        "parentUid" : "69398fea24fd698aa272e95df8422f7e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627919461409,
+          "stop" : 1627919476532,
+          "duration" : 15123
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "69398fea24fd698aa272e95df8422f7e"
+    }, {
+      "name" : "684@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "72767e07893fbe60",
+        "parentUid" : "69315f9198ec5e57a8e934cc73aea726",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627918017285,
+          "stop" : 1627918027914,
+          "duration" : 10629
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "69315f9198ec5e57a8e934cc73aea726"
+    }, {
+      "name" : "12784@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Login_function()",
+        "uid" : "517330e31e414c6",
+        "parentUid" : "412856acc93ae823b964d218687a5b05",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627905238936,
+          "stop" : 1627905239229,
+          "duration" : 293
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "412856acc93ae823b964d218687a5b05"
+    }, {
+      "name" : "4756@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "69cba13eaf5fdfa6",
+        "parentUid" : "98de00bc9bb9e40617648661746d886b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627921852390,
+          "stop" : 1627921867591,
+          "duration" : 15201
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "98de00bc9bb9e40617648661746d886b"
+    }, {
+      "name" : "9768@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Read_from_file()",
+        "uid" : "fdefd3c711a4de4a",
+        "parentUid" : "44d30776ad29168b1b9141a51b5efef6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627650917194,
+          "stop" : 1627650917908,
+          "duration" : 714
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "44d30776ad29168b1b9141a51b5efef6"
+    }, {
+      "name" : "23600@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "add_profile_information()",
+        "uid" : "bd39e99b8a71935c",
+        "parentUid" : "e63edd57e7a045bac17ab2d1466d9732",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627961426113,
+          "stop" : 1627961427220,
+          "duration" : 1107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e63edd57e7a045bac17ab2d1466d9732"
+    }, {
+      "name" : "2400@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "1ebf9ee9c29ab265",
+        "parentUid" : "cd0b8952ff89e59d01f1e8f081cf3d02",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627651489813,
+          "stop" : 1627651500030,
+          "duration" : 10217
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "8de44c06add74248",
+        "parentUid" : "cd0b8952ff89e59d01f1e8f081cf3d02",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627927234042,
+          "stop" : 1627927234053,
+          "duration" : 11
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cd0b8952ff89e59d01f1e8f081cf3d02"
+    }, {
+      "name" : "12096@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "5aea64be5ce1c8af",
+        "parentUid" : "fba5ddf685ff9e37984dae122d2511fb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627652578375,
+          "stop" : 1627652583498,
+          "duration" : 5123
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fba5ddf685ff9e37984dae122d2511fb"
+    }, {
+      "name" : "11548@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Login_function()",
+        "uid" : "22822e67f035d155",
+        "parentUid" : "754ef0fd4f5b9e6bb48ffad1f7657848",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627904808125,
+          "stop" : 1627904808130,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "754ef0fd4f5b9e6bb48ffad1f7657848"
+    }, {
+      "name" : "16692@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "8ffb474a2ac1e9dc",
+        "parentUid" : "276ffd5dfa676e4f75ca8099c5214003",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627652651017,
+          "stop" : 1627652656232,
+          "duration" : 5215
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "276ffd5dfa676e4f75ca8099c5214003"
+    }, {
+      "name" : "19320@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "remove_information()",
+        "uid" : "4a855df6ad3e0f52",
+        "parentUid" : "3c1b159dbf13d678a83dcf8039af4a21",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627909458269,
+          "stop" : 1627909458279,
+          "duration" : 10
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3c1b159dbf13d678a83dcf8039af4a21"
+    }, {
+      "name" : "20108@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "7ca168bf05a6200f",
+        "parentUid" : "fa120f7ebecff6f85152a4d5922dee30",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627654241739,
+          "stop" : 1627654246888,
+          "duration" : 5149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fa120f7ebecff6f85152a4d5922dee30"
+    }, {
+      "name" : "10468@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "upload_pfp()",
+        "uid" : "5e6aaeda0eff2b67",
+        "parentUid" : "99f8bf2c79895337bfb56ec24779812d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627722194584,
+          "stop" : 1627722196577,
+          "duration" : 1993
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "99f8bf2c79895337bfb56ec24779812d"
+    }, {
+      "name" : "9600@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "loop_through_list()",
+        "uid" : "bb62d2c9e3e37084",
+        "parentUid" : "20f9de8e8f493c890322012190ce7f14",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627907722327,
+          "stop" : 1627907729619,
+          "duration" : 7292
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "20f9de8e8f493c890322012190ce7f14"
+    }, {
+      "name" : "23148@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "513b9a34fbfccd82",
+        "parentUid" : "7eb1c3aba83936dfc4813be6ed36b3c4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627960884579,
+          "stop" : 1627960884585,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7eb1c3aba83936dfc4813be6ed36b3c4"
+    }, {
+      "name" : "8440@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Login_function()",
+        "uid" : "f22ebe646b6dda14",
+        "parentUid" : "cff1f165e604204093d31a45dbab0627",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627905632077,
+          "stop" : 1627905632091,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cff1f165e604204093d31a45dbab0627"
+    }, {
+      "name" : "3696@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "add_profile_information()",
+        "uid" : "b9686c305575de3f",
+        "parentUid" : "c7a39802f18943e9d845bfd72fe4ae8c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627910105300,
+          "stop" : 1627910106481,
+          "duration" : 1181
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c7a39802f18943e9d845bfd72fe4ae8c"
+    }, {
+      "name" : "22520@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "810d84282762a4aa",
+        "parentUid" : "db36fd1b279fb5313eb3876a67664a80",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627912723625,
+          "stop" : 1627912728776,
+          "duration" : 5151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "db36fd1b279fb5313eb3876a67664a80"
+    }, {
+      "name" : "17572@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Login_function()",
+        "uid" : "ac782e3067ade7fa",
+        "parentUid" : "f7755176d0cbeccca50605414a32e187",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627904492881,
+          "stop" : 1627904493739,
+          "duration" : 858
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f7755176d0cbeccca50605414a32e187"
+    }, {
+      "name" : "22104@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Register()",
+        "uid" : "e4539cbdc2877c27",
+        "parentUid" : "00eb88985a7cd5778b64eac43094bbd5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627962778816,
+          "stop" : 1627962781197,
+          "duration" : 2381
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "00eb88985a7cd5778b64eac43094bbd5"
+    }, {
+      "name" : "11452@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "List_information()",
+        "uid" : "84424100c2cbe775",
+        "parentUid" : "0aaa637f78d599f770b81b6ca4c2db9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627906513355,
+          "stop" : 1627906514743,
+          "duration" : 1388
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0aaa637f78d599f770b81b6ca4c2db9c"
+    }, {
+      "name" : "21328@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Login_function()",
+        "uid" : "e6b37a1ab8e8112d",
+        "parentUid" : "a06a1e6d9787a02e86b80bc3f6af120a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627906048738,
+          "stop" : 1627906049652,
+          "duration" : 914
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a06a1e6d9787a02e86b80bc3f6af120a"
+    }, {
+      "name" : "7676@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Logging_out()",
+        "uid" : "4baf7f0dada4d514",
+        "parentUid" : "5f8688e56e5b8760f5502180b46263ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627906141298,
+          "stop" : 1627906143564,
+          "duration" : 2266
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5f8688e56e5b8760f5502180b46263ac"
+    }, {
+      "name" : "11468@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "85a0e730941b875b",
+        "parentUid" : "6e57cd279f13b1d317368967e1b9506e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627918295188,
+          "stop" : 1627918295371,
+          "duration" : 183
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6e57cd279f13b1d317368967e1b9506e"
+    }, {
+      "name" : "20772@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "c17f12b654e1482d",
+        "parentUid" : "86862382dc6036be2f0e75a71837e9e9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627909251246,
+          "stop" : 1627909252040,
+          "duration" : 794
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "86862382dc6036be2f0e75a71837e9e9"
+    }, {
+      "name" : "10948@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Logging_out()",
+        "uid" : "ccea709483f5975",
+        "parentUid" : "7b692c92686ef3f115ec3b164731ba1b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627905960620,
+          "stop" : 1627905963014,
+          "duration" : 2394
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7b692c92686ef3f115ec3b164731ba1b"
+    }, {
+      "name" : "23576@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "ee948ae24a3b5a82",
+        "parentUid" : "555b64c91949d8fa5a157fb6dd70b56d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627922917865,
+          "stop" : 1627922917989,
+          "duration" : 124
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "555b64c91949d8fa5a157fb6dd70b56d"
+    }, {
+      "name" : "19472@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "25182f1c11074656",
+        "parentUid" : "d7585e9ce98ae66716e737155afc66a8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627918157662,
+          "stop" : 1627918167842,
+          "duration" : 10180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d7585e9ce98ae66716e737155afc66a8"
+    }, {
+      "name" : "6100@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "f733a8774fdef59f",
+        "parentUid" : "90d9bedd1ee2870f303c01cfd31512c9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627652088037,
+          "stop" : 1627652093205,
+          "duration" : 5168
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "90d9bedd1ee2870f303c01cfd31512c9"
+    }, {
+      "name" : "17616@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Logging_out()",
+        "uid" : "900446922e13c285",
+        "parentUid" : "475f42a662d08233affaa33d4e51e76c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627905614752,
+          "stop" : 1627905615690,
+          "duration" : 938
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "475f42a662d08233affaa33d4e51e76c"
+    }, {
+      "name" : "7120@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Logging_out()",
+        "uid" : "7246309cb12fb3e9",
+        "parentUid" : "7ed1a1ce45c95aef4abddb2e2d26acdb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627906067649,
+          "stop" : 1627906069982,
+          "duration" : 2333
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7ed1a1ce45c95aef4abddb2e2d26acdb"
+    }, {
+      "name" : "21400@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Register()",
+        "uid" : "af33eb8abe4f2856",
+        "parentUid" : "e4084330bf358328ae639790041e165c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627962989007,
+          "stop" : 1627962990287,
+          "duration" : 1280
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e4084330bf358328ae639790041e165c"
+    }, {
+      "name" : "20596@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "ad798091fe043c30",
+        "parentUid" : "9d26cbfce66c4c90976b3af74192a493",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627909335675,
+          "stop" : 1627909336349,
+          "duration" : 674
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9d26cbfce66c4c90976b3af74192a493"
+    }, {
+      "name" : "16444@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "56605d8d6002c537",
+        "parentUid" : "136cb3f7c2e154fd2a2fe85cb58dfcc5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627927549425,
+          "stop" : 1627927559941,
+          "duration" : 10516
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "136cb3f7c2e154fd2a2fe85cb58dfcc5"
+    }, {
+      "name" : "16788@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Logout()",
+        "uid" : "17b32802f606d386",
+        "parentUid" : "7784eaafcd055f2ffdc80a8fa9b6d170",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627905574860,
+          "stop" : 1627905575806,
+          "duration" : 946
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7784eaafcd055f2ffdc80a8fa9b6d170"
+    }, {
+      "name" : "3012@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Register()",
+        "uid" : "5eb99cda882f9da5",
+        "parentUid" : "24ec05d4604f0c993b919958e2c9c350",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627912171552,
+          "stop" : 1627912173963,
+          "duration" : 2411
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "24ec05d4604f0c993b919958e2c9c350"
+    }, {
+      "name" : "6836@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "upload_pfp()",
+        "uid" : "27f8fdb08396e8c7",
+        "parentUid" : "769521c87216c82663d7e93c95eed783",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627722227173,
+          "stop" : 1627722228894,
+          "duration" : 1721
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "769521c87216c82663d7e93c95eed783"
+    }, {
+      "name" : "19792@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "f9dfbdc1aa7b778b",
+        "parentUid" : "c7745f271203ae5794ef0ff1ed8277e1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627962467699,
+          "stop" : 1627962467706,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c7745f271203ae5794ef0ff1ed8277e1"
+    }, {
+      "name" : "2512@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Login_function()",
+        "uid" : "2d635ce49a805181",
+        "parentUid" : "49f2bc165a21d38c3ca2459c1a0bfc9f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627904754980,
+          "stop" : 1627904755286,
+          "duration" : 306
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "49f2bc165a21d38c3ca2459c1a0bfc9f"
+    }, {
+      "name" : "7252@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "93afd0b357606e24",
+        "parentUid" : "0bb74b8d07077bb2d67dd08bdbca1ffe",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627961010733,
+          "stop" : 1627961012106,
+          "duration" : 1373
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0bb74b8d07077bb2d67dd08bdbca1ffe"
+    }, {
+      "name" : "2100@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "loop_through_list()",
+        "uid" : "c1b285eab1bc8cec",
+        "parentUid" : "e7960d4f099ff76ca61c21145d015cd8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627906634535,
+          "stop" : 1627906635874,
+          "duration" : 1339
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e7960d4f099ff76ca61c21145d015cd8"
+    }, {
+      "name" : "19424@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Print_text_from_main_page()",
+        "uid" : "340ea44962d4bfd9",
+        "parentUid" : "37cdf4601e42e8decf645ce62d876692",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627960433286,
+          "stop" : 1627960433332,
+          "duration" : 46
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "37cdf4601e42e8decf645ce62d876692"
+    }, {
+      "name" : "10220@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "read_multiple_info()",
+        "uid" : "2004b2ddaaf60e6e",
+        "parentUid" : "6b39f90f1a097a79a1a812597087ec98",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627925652132,
+          "stop" : 1627925652187,
+          "duration" : 55
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6b39f90f1a097a79a1a812597087ec98"
+    }, {
+      "name" : "24084@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "5b93df0091f04aa",
+        "parentUid" : "e11570999ac89a82d6181e39e1184e6c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627919087033,
+          "stop" : 1627919087042,
+          "duration" : 9
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e11570999ac89a82d6181e39e1184e6c"
+    }, {
+      "name" : "20416@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "a3357d847680dae6",
+        "parentUid" : "58e0dcab9e9b00dddbaf0cc528339bde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627961286561,
+          "stop" : 1627961288645,
+          "duration" : 2084
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "58e0dcab9e9b00dddbaf0cc528339bde"
+    }, {
+      "name" : "9836@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "loop_through_list()",
+        "uid" : "7394e944d348a1f8",
+        "parentUid" : "26d82033a702daae034364278b757591",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627907058766,
+          "stop" : 1627907065421,
+          "duration" : 6655
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "26d82033a702daae034364278b757591"
+    }, {
+      "name" : "8468@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "add_profile_information()",
+        "uid" : "1dcc7528241c1708",
+        "parentUid" : "584da106644f7b857bfad3c773ca27aa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627960973347,
+          "stop" : 1627960975680,
+          "duration" : 2333
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "584da106644f7b857bfad3c773ca27aa"
+    }, {
+      "name" : "10904@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "add_profile_information()",
+        "uid" : "dc3d20330a1fb002",
+        "parentUid" : "4703175b1daae323edcb9b0ac6f9c9bf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627961381478,
+          "stop" : 1627961383069,
+          "duration" : 1591
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Logging_out()",
+        "uid" : "5c2110c053d11747",
+        "parentUid" : "4703175b1daae323edcb9b0ac6f9c9bf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627905262958,
+          "stop" : 1627905263927,
+          "duration" : 969
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4703175b1daae323edcb9b0ac6f9c9bf"
+    }, {
+      "name" : "21480@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "remove_information()",
+        "uid" : "6be0afd3cc76e572",
+        "parentUid" : "82619c6a4f10bc188dbaa6fcf39c2db2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627910531735,
+          "stop" : 1627910534067,
+          "duration" : 2332
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "82619c6a4f10bc188dbaa6fcf39c2db2"
+    }, {
+      "name" : "33332@DESKTOP-JJVKPMQ.main(1)",
+      "children" : [ {
+        "name" : "Login()",
+        "uid" : "b3d6f2d72c4f50a0",
+        "parentUid" : "9f2677e76870659c6400ccf90752c09c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627107892119,
+          "stop" : 1627107896320,
+          "duration" : 4201
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9f2677e76870659c6400ccf90752c09c"
+    }, {
+      "name" : "23336@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "f87565f26001d32a",
+        "parentUid" : "4341b246e54ba8fc2cd399363150cdb1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627922626060,
+          "stop" : 1627922626200,
+          "duration" : 140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4341b246e54ba8fc2cd399363150cdb1"
+    }, {
+      "name" : "15020@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "ae5dfe8270ab16a4",
+        "parentUid" : "91806e1dbab1dce706618091e9a0e365",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627927538350,
+          "stop" : 1627927538356,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "91806e1dbab1dce706618091e9a0e365"
+    }, {
+      "name" : "21960@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Register()",
+        "uid" : "f3dce19b7ea4e8f4",
+        "parentUid" : "60e566bfb4e46f5698951aa844cb53a7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627912580483,
+          "stop" : 1627912580488,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "60e566bfb4e46f5698951aa844cb53a7"
+    }, {
+      "name" : "23052@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "2c7f5130c54cbabc",
+        "parentUid" : "9dcf08c5ac0043dcfd0c734419a39f36",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627915065128,
+          "stop" : 1627915065336,
+          "duration" : 208
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9dcf08c5ac0043dcfd0c734419a39f36"
+    }, {
+      "name" : "20040@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Read_from_file()",
+        "uid" : "68b8873dee0295d",
+        "parentUid" : "a0b3ad4c90353ce7c2fe0c547a7d618f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627651511957,
+          "stop" : 1627651511963,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Register()",
+        "uid" : "fbad8eea060a42d3",
+        "parentUid" : "a0b3ad4c90353ce7c2fe0c547a7d618f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627962908995,
+          "stop" : 1627962910343,
+          "duration" : 1348
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a0b3ad4c90353ce7c2fe0c547a7d618f"
+    }, {
+      "name" : "20260@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "a519b12ef174efa",
+        "parentUid" : "4ce9379c0c9f6d6c53c425a9a5ebe9c1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627651660625,
+          "stop" : 1627651665779,
+          "duration" : 5154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4ce9379c0c9f6d6c53c425a9a5ebe9c1"
+    }, {
+      "name" : "6672@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "85abc0f2974c9c5b",
+        "parentUid" : "f170f517eef3921c5485d688c9b027e7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627960899171,
+          "stop" : 1627960901259,
+          "duration" : 2088
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f170f517eef3921c5485d688c9b027e7"
+    }, {
+      "name" : "20992@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "add_profile_information()",
+        "uid" : "c23c335205b9b40",
+        "parentUid" : "3a6fba9f5f18e3400d9bc5a9e37047b2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627908186351,
+          "stop" : 1627908188353,
+          "duration" : 2002
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3a6fba9f5f18e3400d9bc5a9e37047b2"
+    }, {
+      "name" : "20708@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "add_profile_information()",
+        "uid" : "6cfc09d5e259de15",
+        "parentUid" : "56dbe40e79f04fb9027d838d0beb3352",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627908271454,
+          "stop" : 1627908273451,
+          "duration" : 1997
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "56dbe40e79f04fb9027d838d0beb3352"
+    }, {
+      "name" : "20984@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "read_multiple_info()",
+        "uid" : "ef80d55bd4faeaee",
+        "parentUid" : "c1808fc463c5357cfb520a36ac23ed3f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627926632499,
+          "stop" : 1627926632594,
+          "duration" : 95
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c1808fc463c5357cfb520a36ac23ed3f"
+    }, {
+      "name" : "23560@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "read_multiple_info()",
+        "uid" : "987398c426e3dcdd",
+        "parentUid" : "6db141c2e1ea5a06c7fbc27a8a283912",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627960158498,
+          "stop" : 1627960158702,
+          "duration" : 204
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6db141c2e1ea5a06c7fbc27a8a283912"
+    }, {
+      "name" : "22948@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Register()",
+        "uid" : "fe56a332a03243e9",
+        "parentUid" : "2ac0a5a13e5032563665147535ab6c62",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627912100904,
+          "stop" : 1627912102090,
+          "duration" : 1186
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2ac0a5a13e5032563665147535ab6c62"
+    }, {
+      "name" : "1268@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "c17fcbc30b058696",
+        "parentUid" : "b0328204916e6617bf2448fb76abac3a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627912655252,
+          "stop" : 1627912660391,
+          "duration" : 5139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b0328204916e6617bf2448fb76abac3a"
+    }, {
+      "name" : "12380@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Print_text_from_main_page()",
+        "uid" : "3c5010376b9157ed",
+        "parentUid" : "6b2514f5940efb5ae7ab9eaca156fada",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627960503989,
+          "stop" : 1627960504038,
+          "duration" : 49
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6b2514f5940efb5ae7ab9eaca156fada"
+    }, {
+      "name" : "12044@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "read_multiple_info()",
+        "uid" : "41a6fdb83b878c49",
+        "parentUid" : "6b39517fdce79cad554e71100ca682c7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627960116486,
+          "stop" : 1627960116686,
+          "duration" : 200
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6b39517fdce79cad554e71100ca682c7"
+    }, {
+      "name" : "20544@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "1e1e36706bdef117",
+        "parentUid" : "a7acfb26a314114d293d24ef0be34f07",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627918828253,
+          "stop" : 1627918828419,
+          "duration" : 166
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a7acfb26a314114d293d24ef0be34f07"
+    }, {
+      "name" : "13948@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Read_from_file()",
+        "uid" : "df6fc56cc730eb2a",
+        "parentUid" : "2a622385845f7d9be63317496d0a10df",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627906291048,
+          "stop" : 1627906292034,
+          "duration" : 986
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2a622385845f7d9be63317496d0a10df"
+    }, {
+      "name" : "22964@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "7d542632dfb634fc",
+        "parentUid" : "0b4381eb0c9e7d874ce2939a3281cf45",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627918455366,
+          "stop" : 1627918455562,
+          "duration" : 196
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0b4381eb0c9e7d874ce2939a3281cf45"
+    }, {
+      "name" : "16432@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "82d0c35c1e5dbb4e",
+        "parentUid" : "94eccff9291b993e93066f0ac6cf3daf",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627927246495,
+          "stop" : 1627927251812,
+          "duration" : 5317
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "94eccff9291b993e93066f0ac6cf3daf"
+    }, {
+      "name" : "5028@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "f6d6fe962a457e3e",
+        "parentUid" : "6396fcb14fb1c5041471d9a5851a5e2c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627650372048,
+          "stop" : 1627650372225,
+          "duration" : 177
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6396fcb14fb1c5041471d9a5851a5e2c"
+    }, {
+      "name" : "8492@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "dfc80e79dc2dfa1b",
+        "parentUid" : "0c8b8196b1bfba5741b2aa2d2349be89",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627927086103,
+          "stop" : 1627927086112,
+          "duration" : 9
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0c8b8196b1bfba5741b2aa2d2349be89"
+    }, {
+      "name" : "12920@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Logging_out()",
+        "uid" : "a34680038b0524d5",
+        "parentUid" : "5c481294a756ce4835ee2d9bc0d8c336",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627905950808,
+          "stop" : 1627905950813,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5c481294a756ce4835ee2d9bc0d8c336"
+    }, {
+      "name" : "6032@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Login_function()",
+        "uid" : "8e464135b2e69330",
+        "parentUid" : "3ef3503de94f9bd6887337116615551f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627904818968,
+          "stop" : 1627904819879,
+          "duration" : 911
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3ef3503de94f9bd6887337116615551f"
+    }, {
+      "name" : "15916@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "23a0be37c59110b4",
+        "parentUid" : "ed04b8aed521a761d78a15b642ae189e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627921895796,
+          "stop" : 1627921895926,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ed04b8aed521a761d78a15b642ae189e"
+    }, {
+      "name" : "18452@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "f793a92162609f4",
+        "parentUid" : "c642e6adb83f75901a1bbc47bb1976f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627919316117,
+          "stop" : 1627919316312,
+          "duration" : 195
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c642e6adb83f75901a1bbc47bb1976f6"
+    }, {
+      "name" : "12028@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "upload_pfp()",
+        "uid" : "b902197392e98f29",
+        "parentUid" : "44363d763088d777bb9e9fb4385e36d7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627722139081,
+          "stop" : 1627722139099,
+          "duration" : 18
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "44363d763088d777bb9e9fb4385e36d7"
+    }, {
+      "name" : "21056@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Register()",
+        "uid" : "7f6f18c98361886",
+        "parentUid" : "b8b8227ffe6565bf81269d1815b8d238",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627912296036,
+          "stop" : 1627912298651,
+          "duration" : 2615
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b8b8227ffe6565bf81269d1815b8d238"
+    }, {
+      "name" : "20912@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "e924e92f21f5e223",
+        "parentUid" : "80cae9d6142c5253ecab4b686b52a40a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627909812659,
+          "stop" : 1627909813580,
+          "duration" : 921
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "80cae9d6142c5253ecab4b686b52a40a"
+    }, {
+      "name" : "22856@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "2202e6f567f7fee0",
+        "parentUid" : "1e4956741f20f923e4083584dd55d4ce",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627961203249,
+          "stop" : 1627961204504,
+          "duration" : 1255
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1e4956741f20f923e4083584dd55d4ce"
+    }, {
+      "name" : "19052@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Read_from_file()",
+        "uid" : "8e3e4bcd035925c3",
+        "parentUid" : "f6906f5066b6b00943b8a1692d800d22",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627650945388,
+          "stop" : 1627650946051,
+          "duration" : 663
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f6906f5066b6b00943b8a1692d800d22"
+    }, {
+      "name" : "12488@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Login_function()",
+        "uid" : "e6e8b19fe605dbab",
+        "parentUid" : "e5abe4e00ecca28305d15e46eea1889c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627905641638,
+          "stop" : 1627905642567,
+          "duration" : 929
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e5abe4e00ecca28305d15e46eea1889c"
+    }, {
+      "name" : "20808@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Read_from_file()",
+        "uid" : "352f8b5d8e15f3c6",
+        "parentUid" : "6dca85136e41ccc68fdc07d81b47cf7a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627910635092,
+          "stop" : 1627910635101,
+          "duration" : 9
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6dca85136e41ccc68fdc07d81b47cf7a"
+    }, {
+      "name" : "1016@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "loop_through_list()",
+        "uid" : "94d54d31bf65c117",
+        "parentUid" : "0acfd6e517927b69a14e66a7994ef756",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627907632638,
+          "stop" : 1627907632847,
+          "duration" : 209
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0acfd6e517927b69a14e66a7994ef756"
+    }, {
+      "name" : "11908@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "edf30e1220231c10",
+        "parentUid" : "5fc81b53d6a0ebb5e4d6dd1593030c9d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627922493646,
+          "stop" : 1627922493769,
+          "duration" : 123
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5fc81b53d6a0ebb5e4d6dd1593030c9d"
+    }, {
+      "name" : "19344@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "read_multiple_info()",
+        "uid" : "c1f40c54a82beb1b",
+        "parentUid" : "894deeac09782c2bf45e75d193ba3910",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627961812794,
+          "stop" : 1627961813000,
+          "duration" : 206
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "894deeac09782c2bf45e75d193ba3910"
+    }, {
+      "name" : "2388@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "9508b3d509676e36",
+        "parentUid" : "02050b64d7edcf1d4422e042c950fced",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627909233830,
+          "stop" : 1627909233849,
+          "duration" : 19
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "02050b64d7edcf1d4422e042c950fced"
+    }, {
+      "name" : "7204@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "d62500d793da306f",
+        "parentUid" : "ae7872579bd233c30859104c42a34300",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627921951565,
+          "stop" : 1627921951704,
+          "duration" : 139
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ae7872579bd233c30859104c42a34300"
+    }, {
+      "name" : "19728@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "d0f1fd9999a83757",
+        "parentUid" : "d14e9fb8daee8d5594269e879227bd9b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627651561622,
+          "stop" : 1627651566807,
+          "duration" : 5185
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d14e9fb8daee8d5594269e879227bd9b"
+    }, {
+      "name" : "17404@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Read_from_file()",
+        "uid" : "eab5780ff42715e3",
+        "parentUid" : "70da2e40ca4724c463ba0701d373e708",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627650995936,
+          "stop" : 1627650997119,
+          "duration" : 1183
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "70da2e40ca4724c463ba0701d373e708"
+    }, {
+      "name" : "12464@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Logging_out()",
+        "uid" : "7e45a0590fdae130",
+        "parentUid" : "1b2e0cc7dae521b138f640ee28e8228e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627905253472,
+          "stop" : 1627905253479,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1b2e0cc7dae521b138f640ee28e8228e"
+    }, {
+      "name" : "21728@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "52feb2d8f17070",
+        "parentUid" : "fb73d5d445a3e1282376cfd10426d365",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627915670605,
+          "stop" : 1627915670759,
+          "duration" : 154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fb73d5d445a3e1282376cfd10426d365"
+    }, {
+      "name" : "19964@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "87bef9957673de8a",
+        "parentUid" : "86bcdc2d158c4b4495c7fa315222361e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627960989464,
+          "stop" : 1627960990560,
+          "duration" : 1096
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "86bcdc2d158c4b4495c7fa315222361e"
+    }, {
+      "name" : "12780@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "29926700adde2c2e",
+        "parentUid" : "c161657b04d073144da6f8d843cab60b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627919098856,
+          "stop" : 1627919098997,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c161657b04d073144da6f8d843cab60b"
+    }, {
+      "name" : "12080@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "add_profile_information()",
+        "uid" : "ae9681c0a60d88bc",
+        "parentUid" : "4575de17186237d69a456c0baefb76d5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627961474804,
+          "stop" : 1627961475999,
+          "duration" : 1195
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4575de17186237d69a456c0baefb76d5"
+    }, {
+      "name" : "7840@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Logging_out()",
+        "uid" : "6964ef7c633c3375",
+        "parentUid" : "326fba3b616f0ff7dfec9a3ead10ef7f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627905329635,
+          "stop" : 1627905329971,
+          "duration" : 336
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "326fba3b616f0ff7dfec9a3ead10ef7f"
+    }, {
+      "name" : "19832@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Read_from_file()",
+        "uid" : "a395912fbdc00bcd",
+        "parentUid" : "d2eb10eed65ee164636aa7e4b2025015",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627651523953,
+          "stop" : 1627651525126,
+          "duration" : 1173
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d2eb10eed65ee164636aa7e4b2025015"
+    }, {
+      "name" : "8284@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Register()",
+        "uid" : "43cffb4f68d27bd9",
+        "parentUid" : "c0a3aa9dbd653b6600512809f7aec6d8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627912035105,
+          "stop" : 1627912036301,
+          "duration" : 1196
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c0a3aa9dbd653b6600512809f7aec6d8"
+    }, {
+      "name" : "17100@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "add_profile_information()",
+        "uid" : "78cbf0dea9cfa5f1",
+        "parentUid" : "4dde4b2534e5e910f56874389a6d70a3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627962346782,
+          "stop" : 1627962348778,
+          "duration" : 1996
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4dde4b2534e5e910f56874389a6d70a3"
+    }, {
+      "name" : "10320@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "1e31fb2957be7c31",
+        "parentUid" : "d927c02b336e8453100bcb3c48ecfd20",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627922825560,
+          "stop" : 1627922825785,
+          "duration" : 225
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d927c02b336e8453100bcb3c48ecfd20"
+    }, {
+      "name" : "7612@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "1f8b195534ea1116",
+        "parentUid" : "c37219205faa8dd67930ebe88182f80c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627922375328,
+          "stop" : 1627922375453,
+          "duration" : 125
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c37219205faa8dd67930ebe88182f80c"
+    }, {
+      "name" : "20900@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "read_multiple_info()",
+        "uid" : "35a9993afb02bf63",
+        "parentUid" : "0fd458f46d90ab47d392e2350ca541e1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627959908169,
+          "stop" : 1627959909067,
+          "duration" : 898
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0fd458f46d90ab47d392e2350ca541e1"
+    }, {
+      "name" : "18228@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Logging_out()",
+        "uid" : "133f4947c3cc9ed1",
+        "parentUid" : "1c3e900f184b9b53f51738762371782a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627904977205,
+          "stop" : 1627904978116,
+          "duration" : 911
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1c3e900f184b9b53f51738762371782a"
+    }, {
+      "name" : "21736@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "a97723b14b099608",
+        "parentUid" : "f7b2edb483c2b9667074197a6e72a523",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627918243798,
+          "stop" : 1627918243804,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f7b2edb483c2b9667074197a6e72a523"
+    }, {
+      "name" : "11832@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "add_profile_information()",
+        "uid" : "ff25d215c2fa432",
+        "parentUid" : "2ee74bd498a331ef38a5766b95f38cb6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627910014980,
+          "stop" : 1627910016243,
+          "duration" : 1263
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2ee74bd498a331ef38a5766b95f38cb6"
+    }, {
+      "name" : "17300@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "e56e0a2d76a824e2",
+        "parentUid" : "65ea78659eef29f34c9cce08da5c0779",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627918255098,
+          "stop" : 1627918265271,
+          "duration" : 10173
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "65ea78659eef29f34c9cce08da5c0779"
+    }, {
+      "name" : "19916@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "remove_information()",
+        "uid" : "1022ba0e95380fdb",
+        "parentUid" : "0cdf7d03fff0876ae8cb7a9e4d19ed1a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627908848470,
+          "stop" : 1627908850370,
+          "duration" : 1900
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0cdf7d03fff0876ae8cb7a9e4d19ed1a"
+    }, {
+      "name" : "21940@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "7708a10ce0d51fda",
+        "parentUid" : "b3eca8bd37531d1d914ffb932fb66a56",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627910799559,
+          "stop" : 1627910800861,
+          "duration" : 1302
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b3eca8bd37531d1d914ffb932fb66a56"
+    }, {
+      "name" : "14056@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "read_multiple_info()",
+        "uid" : "b70e70150c2ab8c3",
+        "parentUid" : "43f58e8ac697dd37542c0b5fe5b3753e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627960104670,
+          "stop" : 1627960104676,
+          "duration" : 6
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "43f58e8ac697dd37542c0b5fe5b3753e"
+    }, {
+      "name" : "15620@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "add_profile_information()",
+        "uid" : "b78a48f2ebba152f",
+        "parentUid" : "4e6b8515081e3d6cb565fd84ee0da660",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627910400154,
+          "stop" : 1627910402637,
+          "duration" : 2483
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4e6b8515081e3d6cb565fd84ee0da660"
+    }, {
+      "name" : "18504@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "read_multiple_info()",
+        "uid" : "ba8ad9dd38f910fe",
+        "parentUid" : "938810031ba8bd0f2f2491a6fe8c71b3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627959784918,
+          "stop" : 1627959786348,
+          "duration" : 1430
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "938810031ba8bd0f2f2491a6fe8c71b3"
+    }, {
+      "name" : "23832@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "75ee703e95d164a9",
+        "parentUid" : "6e5333806926124ac907b2926e703838",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627918103857,
+          "stop" : 1627918104049,
+          "duration" : 192
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6e5333806926124ac907b2926e703838"
+    }, {
+      "name" : "1932@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Login_function()",
+        "uid" : "db911974f4873570",
+        "parentUid" : "bf7d54fd4a5a2b4e33b6bc79df5e1721",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627905892349,
+          "stop" : 1627905893317,
+          "duration" : 968
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bf7d54fd4a5a2b4e33b6bc79df5e1721"
+    }, {
+      "name" : "23284@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "ef1f2dc0aa6d2bd",
+        "parentUid" : "c4f4958ff5c61e25fedd5e42bed37956",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627915738385,
+          "stop" : 1627915738566,
+          "duration" : 181
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c4f4958ff5c61e25fedd5e42bed37956"
+    }, {
+      "name" : "23224@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "6b36c6c41a7dea3b",
+        "parentUid" : "e3173eeb05fd86cd23655fbefd436e5d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627915817091,
+          "stop" : 1627915827623,
+          "duration" : 10532
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e3173eeb05fd86cd23655fbefd436e5d"
+    }, {
+      "name" : "18368@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Register()",
+        "uid" : "4b0f79bd16ff8f80",
+        "parentUid" : "7d19cee26547c2cdaedd6f09a1f73eb4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627912593421,
+          "stop" : 1627912595875,
+          "duration" : 2454
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7d19cee26547c2cdaedd6f09a1f73eb4"
+    }, {
+      "name" : "19012@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "ebb1255d82b296be",
+        "parentUid" : "0392f0bd511c075486952227559032fc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627651449862,
+          "stop" : 1627651450033,
+          "duration" : 171
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0392f0bd511c075486952227559032fc"
+    }, {
+      "name" : "16852@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "read_multiple_info()",
+        "uid" : "e42f5ec71cc51028",
+        "parentUid" : "411dea81490f0068a5e3a1697286a261",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627959949258,
+          "stop" : 1627959950220,
+          "duration" : 962
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "411dea81490f0068a5e3a1697286a261"
+    }, {
+      "name" : "6492@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Read_from_file()",
+        "uid" : "906e37adb308f47",
+        "parentUid" : "d2d318502f58a5bb0121a8bc6ab5a3cc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627910647063,
+          "stop" : 1627910648363,
+          "duration" : 1300
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d2d318502f58a5bb0121a8bc6ab5a3cc"
+    }, {
+      "name" : "7604@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "read_multiple_info()",
+        "uid" : "b45e6546cfb83c23",
+        "parentUid" : "64d37e3a8eed7f037369ac63fc48cd0f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627961712238,
+          "stop" : 1627961712441,
+          "duration" : 203
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "64d37e3a8eed7f037369ac63fc48cd0f"
+    }, {
+      "name" : "12140@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "811480ef568e71cb",
+        "parentUid" : "41307c77cffc21d7e9c104fc42e6717b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627915806459,
+          "stop" : 1627915806469,
+          "duration" : 10
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "41307c77cffc21d7e9c104fc42e6717b"
+    }, {
+      "name" : "22292@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "add_profile_information()",
+        "uid" : "4a3a480d571687c2",
+        "parentUid" : "a7b67c16c5c4fa9558158d9c423371ca",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627961586058,
+          "stop" : 1627961588651,
+          "duration" : 2593
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a7b67c16c5c4fa9558158d9c423371ca"
+    }, {
+      "name" : "16256@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "List_information()",
+        "uid" : "a391aafa80811b64",
+        "parentUid" : "084e2ab4b014c93ac64baa0053a4337e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627909541110,
+          "stop" : 1627909541980,
+          "duration" : 870
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "084e2ab4b014c93ac64baa0053a4337e"
+    }, {
+      "name" : "9516@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "remove_information()",
+        "uid" : "a9bb03d2ecb8a6ec",
+        "parentUid" : "1541ec0284ea4a4f847df9d9d77c1932",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627909470065,
+          "stop" : 1627909472213,
+          "duration" : 2148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1541ec0284ea4a4f847df9d9d77c1932"
+    }, {
+      "name" : "21764@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "read_multiple_info()",
+        "uid" : "afcffe6ac32a882c",
+        "parentUid" : "df0327680484bc7eabc48048abb1817b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1627961773575,
+          "stop" : 1627961773784,
+          "duration" : 209
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "df0327680484bc7eabc48048abb1817b"
+    }, {
+      "name" : "19428@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "writeprivacytextintodocument()",
+        "uid" : "fce7544428575014",
+        "parentUid" : "d06428c396126d589fd4d1206e0d3217",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627918889681,
+          "stop" : 1627918889861,
+          "duration" : 180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d06428c396126d589fd4d1206e0d3217"
+    }, {
+      "name" : "17924@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Read_from_file()",
+        "uid" : "6984580b1dca781d",
+        "parentUid" : "424f96e47ad7310c4bc59498da63eb02",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627650814354,
+          "stop" : 1627650814701,
+          "duration" : 347
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "424f96e47ad7310c4bc59498da63eb02"
+    }, {
+      "name" : "22696@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "e93925b88fd2956e",
+        "parentUid" : "dee987773d24130de26feb39a5b14e8f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627962478345,
+          "stop" : 1627962480474,
+          "duration" : 2129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "dee987773d24130de26feb39a5b14e8f"
+    }, {
+      "name" : "13236@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "Logout()",
+        "uid" : "9d1b4db0b55bc3e",
+        "parentUid" : "f32b642913a770b1e6a451b2b75e3869",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627905565246,
+          "stop" : 1627905565253,
+          "duration" : 7
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f32b642913a770b1e6a451b2b75e3869"
+    }, {
+      "name" : "18988@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)",
+      "children" : [ {
+        "name" : "modify_profile_informations()",
+        "uid" : "925408abe3c039d4",
+        "parentUid" : "90ffaf7944e795d4d19e8771d46e3349",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627910870223,
+          "stop" : 1627910872705,
+          "duration" : 2482
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "90ffaf7944e795d4d19e8771d46e3349"
+    } ],
+    "uid" : "a6d56157f6614b1cfa28bdde52bae880"
+  } ],
+  "name" : "timeline"
+}
