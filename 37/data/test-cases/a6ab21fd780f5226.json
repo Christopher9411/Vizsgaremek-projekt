@@ -1,0 +1,209 @@
+{
+  "uid" : "a6ab21fd780f5226",
+  "name" : "modify_profile_informations()",
+  "fullName" : "ForumTestPOM.modify_profile_informations",
+  "historyId" : "d2b5efbb69b215a96418d04f8c9c1e21",
+  "time" : {
+    "start" : 1627962478345,
+    "stop" : 1627962480474,
+    "duration" : 2129
+  },
+  "description" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "DESKTOP-JJVKPMQ"
+  }, {
+    "name" : "thread",
+    "value" : "22696@DESKTOP-JJVKPMQ.ForkJoinPool-1-worker-3(16)"
+  }, {
+    "name" : "framework",
+    "value" : "junit-platform"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "package",
+    "value" : "ForumTestPOM"
+  }, {
+    "name" : "testClass",
+    "value" : "ForumTestPOM"
+  }, {
+    "name" : "testMethod",
+    "value" : "modify_profile_informations"
+  }, {
+    "name" : "suite",
+    "value" : "ForumTestPOM"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "941afb5a12892c66",
+      "status" : "broken",
+      "statusDetails" : "invalid argument: user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JJVKPMQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00BC3733+2504499]\n\tOrdinal0 [0x00B5C401+2081793]\n\tOrdinal0 [0x00A62628+1058344]\n\tOrdinal0 [0x00A7D57A+1168762]\n\tOrdinal0 [0x00A79DC3+1154499]\n\tOrdinal0 [0x00AA9B82+1350530]\n\tOrdinal0 [0x00AA97DA+1349594]\n\tOrdinal0 [0x00AA5D4B+1334603]\n\tOrdinal0 [0x00A822B4+1188532]\n\tOrdinal0 [0x00A83149+1192265]\n\tGetHandleVerifier [0x00D3FB8C+1512252]\n\tGetHandleVerifier [0x00DEB0DF+2214031]\n\tGetHandleVerifier [0x00C44BC3+484211]\n\tGetHandleVerifier [0x00C43E69+480793]\n\tOrdinal0 [0x00B6218D+2105741]\n\tOrdinal0 [0x00B666E8+2123496]\n\tOrdinal0 [0x00B66827+2123815]\n\tOrdinal0 [0x00B6FB73+2161523]\n\tBaseThreadInitThunk [0x75EBFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77AA7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77AA7A4E+238]\n",
+      "time" : {
+        "start" : 1627962467699,
+        "stop" : 1627962467706,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "463c254498f5741b",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(@name,'homepage')]\"}\n  (Session info: chrome=92.0.4515.107)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JJVKPMQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: c:\\Users\\Tatsuya Hiroki\\App...}, goog:chromeOptions: {debuggerAddress: localhost:55780}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: dbf1388764a79ae847c0ee941226d1e0\n*** Element info: {Using=xpath, value=//*[contains(@name,'homepage')]}",
+      "time" : {
+        "start" : 1627962361988,
+        "stop" : 1627962363229,
+        "duration" : 1241
+      }
+    }, {
+      "uid" : "71e188583ca9e77e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627961286561,
+        "stop" : 1627961288645,
+        "duration" : 2084
+      }
+    }, {
+      "uid" : "80141abbc2a637dc",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"tr.mainsettings:nth-child(6) > td:nth-child(2) > input:nth-child(1)\"}\n  (Session info: chrome=92.0.4515.107)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JJVKPMQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: c:\\Users\\Tatsuya Hiroki\\App...}, goog:chromeOptions: {debuggerAddress: localhost:56112}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2ce0245fef25bc40d18c113243ca7e26\n*** Element info: {Using=css selector, value=tr.mainsettings:nth-child(6) > td:nth-child(2) > input:nth-child(1)}",
+      "time" : {
+        "start" : 1627961203249,
+        "stop" : 1627961204504,
+        "duration" : 1255
+      }
+    }, {
+      "uid" : "ad2c73994f5b0246",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"tr.mainsettings:nth-child(6) > td:nth-child(2) > input:nth-child(1)\"}\n  (Session info: chrome=92.0.4515.107)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JJVKPMQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: c:\\Users\\Tatsuya Hiroki\\App...}, goog:chromeOptions: {debuggerAddress: localhost:62094}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8ddc8bd1058686c40c3d91fe25b183ea\n*** Element info: {Using=css selector, value=tr.mainsettings:nth-child(6) > td:nth-child(2) > input:nth-child(1)}",
+      "time" : {
+        "start" : 1627961010733,
+        "stop" : 1627961012106,
+        "duration" : 1373
+      }
+    }, {
+      "uid" : "6c97a3a1783009d",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"tr.mainsettings:nth-child(6) > td:nth-child(2) > input:nth-child(1)\"}\n  (Session info: chrome=92.0.4515.107)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JJVKPMQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: c:\\Users\\Tatsuya Hiroki\\App...}, goog:chromeOptions: {debuggerAddress: localhost:63358}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 892abe6039cd68e5b1853238b86563e7\n*** Element info: {Using=css selector, value=tr.mainsettings:nth-child(6) > td:nth-child(2) > input:nth-child(1)}",
+      "time" : {
+        "start" : 1627960989464,
+        "stop" : 1627960990560,
+        "duration" : 1096
+      }
+    }, {
+      "uid" : "f1b6ab2edf66d454",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627960899171,
+        "stop" : 1627960901259,
+        "duration" : 2088
+      }
+    }, {
+      "uid" : "e096da2152871027",
+      "status" : "broken",
+      "statusDetails" : "invalid argument: user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JJVKPMQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x00BC3733+2504499]\n\tOrdinal0 [0x00B5C401+2081793]\n\tOrdinal0 [0x00A62628+1058344]\n\tOrdinal0 [0x00A7D57A+1168762]\n\tOrdinal0 [0x00A79DC3+1154499]\n\tOrdinal0 [0x00AA9B82+1350530]\n\tOrdinal0 [0x00AA97DA+1349594]\n\tOrdinal0 [0x00AA5D4B+1334603]\n\tOrdinal0 [0x00A822B4+1188532]\n\tOrdinal0 [0x00A83149+1192265]\n\tGetHandleVerifier [0x00D3FB8C+1512252]\n\tGetHandleVerifier [0x00DEB0DF+2214031]\n\tGetHandleVerifier [0x00C44BC3+484211]\n\tGetHandleVerifier [0x00C43E69+480793]\n\tOrdinal0 [0x00B6218D+2105741]\n\tOrdinal0 [0x00B666E8+2123496]\n\tOrdinal0 [0x00B66827+2123815]\n\tOrdinal0 [0x00B6FB73+2161523]\n\tBaseThreadInitThunk [0x75EBFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77AA7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77AA7A4E+238]\n",
+      "time" : {
+        "start" : 1627960884579,
+        "stop" : 1627960884585,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "2d5e3048e26b7a0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627910870223,
+        "stop" : 1627910872705,
+        "duration" : 2482
+      }
+    }, {
+      "uid" : "2ce6614c424d44b7",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(@name,'homepage')]\"}\n  (Session info: chrome=92.0.4515.107)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JJVKPMQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: c:\\Users\\Tatsuya Hiroki\\App...}, goog:chromeOptions: {debuggerAddress: localhost:56405}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 8b348f209dc4dd5358831107342dcfb4\n*** Element info: {Using=xpath, value=//*[contains(@name,'homepage')]}",
+      "time" : {
+        "start" : 1627910799559,
+        "stop" : 1627910800861,
+        "duration" : 1302
+      }
+    }, {
+      "uid" : "e0de1e3b27c2d183",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@class=\"indpl_text indpl_email\"]\"}\n  (Session info: chrome=92.0.4515.107)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JJVKPMQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: c:\\Users\\Tatsuya Hiroki\\App...}, goog:chromeOptions: {debuggerAddress: localhost:60148}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 1dadd1d4a7ec6278135508cf5d9fccef\n*** Element info: {Using=xpath, value=//*[@class=\"indpl_text indpl_email\"]}",
+      "time" : {
+        "start" : 1627909812659,
+        "stop" : 1627909813580,
+        "duration" : 921
+      }
+    }, {
+      "uid" : "936c54f978eaf89c",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@class=\"indpl_text indpl_passwd\"]\"}\n  (Session info: chrome=92.0.4515.107)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JJVKPMQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: c:\\Users\\Tatsuya Hiroki\\App...}, goog:chromeOptions: {debuggerAddress: localhost:58711}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: f1c47e7a056f5ec6bd5bb156dcfc3505\n*** Element info: {Using=xpath, value=//*[@class=\"indpl_text indpl_passwd\"]}",
+      "time" : {
+        "start" : 1627909335675,
+        "stop" : 1627909336349,
+        "duration" : 674
+      }
+    }, {
+      "uid" : "f64873210ef99153",
+      "status" : "broken",
+      "statusDetails" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@class=\"indpl_text indpl_passwd\"]\"}\n  (Session info: chrome=92.0.4515.107)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JJVKPMQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: c:\\Users\\Tatsuya Hiroki\\App...}, goog:chromeOptions: {debuggerAddress: localhost:60823}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: cfa2b60d402fff1912ab579305d0a5da\n*** Element info: {Using=xpath, value=//*[@class=\"indpl_text indpl_passwd\"]}",
+      "time" : {
+        "start" : 1627909251246,
+        "stop" : 1627909252040,
+        "duration" : 794
+      }
+    }, {
+      "uid" : "1a8229251d42298c",
+      "status" : "broken",
+      "statusDetails" : "invalid argument: user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-JJVKPMQ', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'\nDriver info: driver.version: ChromeDriver\nremote stacktrace: Backtrace:\n\tOrdinal0 [0x004C3733+2504499]\n\tOrdinal0 [0x0045C401+2081793]\n\tOrdinal0 [0x00362628+1058344]\n\tOrdinal0 [0x0037D57A+1168762]\n\tOrdinal0 [0x00379DC3+1154499]\n\tOrdinal0 [0x003A9B82+1350530]\n\tOrdinal0 [0x003A97DA+1349594]\n\tOrdinal0 [0x003A5D4B+1334603]\n\tOrdinal0 [0x003822B4+1188532]\n\tOrdinal0 [0x00383149+1192265]\n\tGetHandleVerifier [0x0063FB8C+1512252]\n\tGetHandleVerifier [0x006EB0DF+2214031]\n\tGetHandleVerifier [0x00544BC3+484211]\n\tGetHandleVerifier [0x00543E69+480793]\n\tOrdinal0 [0x0046218D+2105741]\n\tOrdinal0 [0x004666E8+2123496]\n\tOrdinal0 [0x00466827+2123815]\n\tOrdinal0 [0x0046FB73+2161523]\n\tBaseThreadInitThunk [0x75EBFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77AA7A7E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77AA7A4E+238]\n",
+      "time" : {
+        "start" : 1627909233830,
+        "stop" : 1627909233849,
+        "duration" : 19
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "989a42ec4617a06e",
+        "reportUrl" : "https://Christopher9411.github.io/Vizsgaremek-projekt/33//#testresult/989a42ec4617a06e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627962478345,
+          "stop" : 1627962480474,
+          "duration" : 2129
+        }
+      }, {
+        "uid" : "e93925b88fd2956e",
+        "reportUrl" : "https://Christopher9411.github.io/Vizsgaremek-projekt/32//#testresult/e93925b88fd2956e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1627962478345,
+          "stop" : 1627962480474,
+          "duration" : 2129
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a6ab21fd780f5226.json",
+  "parameterValues" : [ ]
+}
